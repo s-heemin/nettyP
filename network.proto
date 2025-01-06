@@ -1,0 +1,2186 @@
+syntax = "proto3";
+import "NetEnum.proto";
+
+option java_multiple_files = true;
+option java_package = "com.supercat.growstone.network.messages";
+
+message Packet {
+      PacketType type = 1;
+	  int64 id = 2;
+
+      oneof payload {
+          ZPing ping = 3;
+          ZLoginRequest loginRequest = 4;
+          ZLoginResponse loginResponse = 5;
+          ZChangeEquipAvatarRequest changeEquipAvatarRequest = 6;
+          ZChangeEquipAvatarResponse changeEquipAvatarResponse = 7;
+          ZGrowthLevelUpRequest growthLevelUpRequest = 8;
+          ZGrowthLevelUpResponse growthLevelUpResponse = 9;
+          ZGrowthPromoteRequest growthPromoteRequest = 10;
+          ZGrowthPromoteResponse growthPromoteResponse = 11;
+          ZGrowthLimitBreakRequest growthLimitBreakRequest = 12;
+          ZGrowthLimitBreakResponse growthLimitBreakResponse = 13;
+          ZPartsSlotLevelUpRequest partsSlotLevelUpRequest = 14;
+          ZPartsSlotLevelUpResponse partsSlotLevelUpResponse = 15;
+          ZGrowthEquipPartsRequest growthEquipPartsRequest = 16;
+          ZGrowthEquipPartsResponse growthEquipPartsResponse = 17;
+          ZLogoutRequest logoutRequest = 18;
+          ZLogoutResponse logoutResponse = 19;
+          ZLogoutNotify logoutNotify = 20;
+          ZMailRequest mailRequest = 21;
+          ZMailResponse mailResponse = 22;
+          ZMailReadRequest mailReadRequest = 23;
+          ZMailReadResponse mailReadResponse = 24;
+          ZMailNotify mailNotify = 25;
+          ZCollectionLevelUpRequest collectionLevelUpRequest = 26;
+          ZCollectionLevelUpResponse collectionLevelUpResponse = 27;
+          ZCollectionRequest collectionRequest = 28;
+          ZCollectionResponse collectionResponse = 29;
+          ZSyncItemCountRequest syncItemCountRequest = 30;
+          ZSyncItemCountResponse syncItemCountResponse = 31;
+          ZPartsSlotRequest PartsSlotRequest = 32;
+          ZPartsSlotResponse PartsSlotResponse = 33;
+          ZStageClearSaveRequest stageClearSaveRequest = 34;
+          ZStageClearSaveResponse stageClearSaveResponse = 35;
+          ZChangePortraitIconRequest changePortraitIconRequest = 36;
+          ZChangePortraitIconResponse changePortraitIconResponse = 37;
+          ZChangePlayerNameRequest changePlayerNameRequest = 38;
+          ZChangePlayerNameResponse changePlayerNameResponse = 39;
+          ZStatsRequest statsRequest = 40;
+          ZStatsResponse statsResponse = 41;
+          ZCharacterStatGrowthRequest characterStatGrowthRequest = 42;
+          ZCharacterStatGrowthResponse characterStatGrowthResponse = 43;
+          ZCharacterStatGrowthLevelUpRequest characterStatGrowthLevelUpRequest = 44;
+          ZCharacterStatGrowthLevelUpResponse characterStatGrowthLevelUpResponse = 45;
+          ZEquipPresetRequest equipPresetRequest = 46;
+          ZEquipPresetResponse equipPresetResponse = 47;
+          ZEquipPresetEquipRequest equipPresetEquipRequest = 48;
+          ZEquipPresetEquipResponse equipPresetEquipResponse = 49;
+          ZEquipPresetUnEquipRequest equipPresetUnEquipRequest = 50;
+          ZEquipPresetUnEquipResponse equipPresetUnEquipResponse = 51;
+          ZEquipPresetNameChangeRequest equipPresetNameChangeRequest = 54;
+          ZEquipPresetNameChangeResponse equipPresetNameChangeResponse = 55;
+          ZEquipPresetIndexChangeRequest equipPresetIndexChangeRequest = 56;
+          ZEquipPresetIndexChangeResponse equipPresetIndexChangeResponse = 57;
+          ZStatsNotify statsNotify = 58;
+          ZPlayerLevelUpNotify playerLevelUpNotify = 59;
+          ZDailyDungeonStartRequest dailyDungeonStartRequest = 60;
+          ZDailyDungeonStartResponse dailyDungeonStartResponse = 61;
+          ZDailyDungeonClearRequest dailyDungeonClearRequest = 62;
+          ZDailyDungeonClearResponse dailyDungeonClearResponse = 63;
+          ZDailyDungeonRequest dailyDungeonRequest = 64;
+          ZDailyDungeonResponse dailyDungeonResponse = 65;
+          ZDailyDungeonViewAdvertiseRequest dailyDungeonViewAdvertiseRequest = 66;
+          ZDailyDungeonViewAdvertiseResponse dailyDungeonViewAdvertiseResponse = 67;
+          ZTowerStartRequest towerStartRequest = 68;
+          ZTowerStartResponse towerStartResponse = 69;
+          ZTowerClearRequest towerClearRequest = 70;
+          ZTowerClearResponse towerClearResponse = 71;
+          ZTowerRequest towerRequest = 72;
+          ZTowerResponse towerResponse = 73;
+          ZRaidDungeonStartRequest raidDungeonStartRequest = 74;
+          ZRaidDungeonStartResponse raidDungeonStartResponse = 75;
+          ZRaidDungeonClearRequest raidDungeonClearRequest = 76;
+          ZRaidDungeonClearResponse raidDungeonClearResponse = 77;
+          ZRaidDungeonViewAdvertiseRequest raidDungeonViewAdvertiseRequest = 78;
+          ZRaidDungeonViewAdvertiseResponse raidDungeonViewAdvertiseResponse = 79;
+          ZRaidDungeonRequest raidDungeonRequest = 80;
+          ZRaidDungeonResponse raidDungeonResponse = 81;
+          ZCooperativeRaidDungeonRequest cooperativeRaidDungeonRequest = 82;
+          ZCooperativeRaidDungeonResponse cooperativeRaidDungeonResponse = 83;
+          ZCompetitiveRaidDungeonRequest competitiveRaidDungeonRequest = 84;
+          ZCompetitiveRaidDungeonResponse competitiveRaidDungeonResponse = 85;
+          ZCompetitiveRaidDungeonRankRequest competitiveRaidDungeonRankRequest = 86;
+          ZCompetitiveRaidDungeonRankResponse competitiveRaidDungeonRankResponse = 87;
+          ZFriendListRequest friendListRequest = 88;
+          ZFriendListResponse friendListResponse = 89;
+          ZAddFriendRequest addFriendRequest = 90;
+          ZAddFriendResponse addFriendResponse = 91;
+          ZDeleteFriendRequest deleteFriendRequest = 92;
+          ZDeleteFriendResponse deleteFriendResponse = 93;
+          ZGiveFriendGiftRequest giveFriendGiftRequest = 94;
+          ZGiveFriendGiftResponse giveFriendGiftResponse = 95;
+          ZSearchFriendRequest searchFriendRequest = 96;
+          ZSearchFriendResponse searchFriendResponse = 97;
+          ZAddFriendCancelRequest addFriendCancelRequest = 98;
+          ZAddFriendCancelResponse addFriendCancelResponse = 99;
+          ZRecommendFriendRequest recommendFriendRequest = 101;
+          ZRecommendFriendResponse recommendFriendResponse = 102;
+          ZAddFriendNotify addFriendNotify = 103;
+          ZDeleteFriendNotify deleteFriendNotify = 104;
+          ZChangeFriendStateNotify changeFriendStateNotify = 105;
+          ZBlockPlayerRequest blockPlayerRequest = 106;
+          ZBlockPlayerResponse blockPlayerResponse = 107;
+          ZUnBlockPlayerRequest unBlockPlayerRequest = 108;
+          ZUnBlockPlayerResponse unBlockPlayerResponse = 109;
+          ZPlayerBlockListRequest playerBlockListRequest = 110;
+          ZPlayerBlockListResponse playerBlockListResponse = 111;
+          ZCheatRequest cheatRequest = 112;
+          ZCheatResponse cheatResponse = 113;
+          ZViewAdvertiseRequest viewAdvertiseRequest = 114;
+          ZViewAdvertiseResponse viewAdvertiseResponse = 115;
+          ZAvatarNotify avatarNotify = 116;
+          ZGrowthNotify growthNotify = 117;
+          ZItemNotify itemNotify = 118;
+          ZStageNotify stageNotify = 119;
+          ZStageBossGaugeOnRequest stageBossGaugeOnRequest = 120;
+          ZStageBossGaugeOnResponse stageBossGaugeOnResponse = 121;
+          ZViewExplorationNotify viewExplorationNotify = 123;
+          ZExplorationStartRequest explorationStartRequest = 124;
+          ZExplorationStartResponse explorationStartResponse = 125;
+          ZExplorationEndRequest explorationEndRequest = 126;
+          ZExplorationEndResponse explorationEndResponse = 127;
+          ZExplorationChangeRequest explorationChangeRequest = 128;
+          ZExplorationChangeResponse explorationChangeResponse = 129;
+          ZViewExplorationCommercialRequest viewExplorationCommercialRequest = 130;
+          ZViewExplorationCommercialResponse viewExplorationCommercialResponse = 131;
+          ZExplorationCommercialRequest explorationCommercialRequest = 132;
+          ZExplorationCommercialResponse explorationCommercialResponse = 133;
+          ZExplorationAccelerationRequest explorationAccelerationRequest = 134;
+          ZExplorationAccelerationResponse explorationAccelerationResponse = 135;
+          ZExplorationEditAutoRequest explorationEditAutoRequest = 136;
+          ZExplorationEditAutoResponse explorationEditAutoResponse = 137;
+          ZCurrencyNotify currencyNotify = 138;
+          ZAttackPowerRankRequest attackPowerRankRequest = 139;
+          ZAttackPowerRankResponse attackPowerRankResponse = 140;
+          ZGetPlayerDetailInfoRequest getPlayerDetailInfoRequest = 141;
+          ZGetPlayerDetailInfoResponse getPlayerDetailInfoResponse = 142;
+          ZPlayerSpawnGachaRequest playerSpawnGachaRequest = 143;
+          ZPlayerSpawnGachaResponse playerSpawnGachaResponse = 144;
+          ZPlayerPickUpGachaRewardRequest playerPickUpGachaRewardRequest = 145;
+          ZPlayerPickUpGachaRewardResponse playerPickUpGachaRewardResponse = 146;
+          ZPlayerViewGachaCommercialRequest playerViewGachaCommercialRequest = 147;
+          ZPlayerViewGachaCommercialResponse playerViewGachaCommercialResponse = 148;
+          ZPlayerConditionPackageNotify playerConditionPackageNotify = 149;
+          ZDiggingRequest  diggingRequest = 150;
+          ZDiggingResponse diggingResponse = 151;
+          ZDiggingUpgradeRequest diggingUpgradeRequest = 152;
+          ZDiggingUpgradeResponse diggingUpgradeResponse = 153;
+          ZDiggingUpgradeInfoRequest diggingUpgradeInfoRequest = 154;
+          ZDiggingUpgradeInfoResponse diggingUpgradeInfoResponse = 155;
+          ZDiggingCompleteRequest diggingCompleteRequest = 156;
+          ZDiggingCompleteResponse diggingCompleteResponse = 157;
+          ZViewDiggingCommercialRequest viewDiggingCommercialRequest = 158;
+          ZViewDiggingCommercialResponse viewDiggingCommercialResponse = 159;
+          ZUseAcceleratorRequest useAcceleratorRequest = 160;
+          ZUseAcceleratorResponse useAcceleratorResponse = 161;
+          ZDiggingInfoRequest diggingInfoRequest = 162;
+          ZDiggingInfoResponse diggingInfoResponse = 163;
+          ZUseMultiAcceleratorRequest useMultiAcceleratorRequest = 164;
+          ZUseMultiAcceleratorResponse useMultiAcceleratorResponse = 165;
+          ZPlayerGachaInfoRequest playerGachaInfoRequest = 166;
+          ZPlayerGachaInfoResponse playerGachaInfoResponse = 167;
+          ZPlayerShopItemInfoRequest playerShopItemInfoRequest = 168;
+          ZPlayerShopItemInfoResponse playerShopItemInfoResponse = 169;
+          ZPlayerPurchaseShopItemRequest playerPurchaseShopItemRequest = 172;
+          ZPlayerPurchaseShopItemResponse playerPurchaseShopItemResponse = 173;
+          ZPlayerConditionPackageInfoRequest playerConditionPackageInfoRequest = 174;
+          ZPlayerConditionPackageInfoRequest playerConditionPackageInfoResponse = 175;
+          ZPlayerShopPassInfoRequest playerShopPassInfoRequest = 176;
+          ZPlayerShopPassInfoResponse playerShopPassInfoResponse = 177;
+          ZPlayerShopPassRewardRequest playerShopPassRewardRequest = 178;
+          ZPlayerShopPassRewardResponse PlayerShopPassRewardResponse = 179;
+          ZDuelRequest duelRequest = 180;
+          ZDuelResponse duelResponse = 181;
+          ZFarmInfoRequest farmInfoRequest = 200;
+          ZFarmInfoResponse farmInfoResponse = 201;
+          ZFarmPlantSeedRequest farmPlantSeedRequest = 202;
+          ZFarmPlantSeedResponse farmPlantSeedResponse = 203;
+          ZFarmPlantBoostRequest farmPlantBoostRequest = 204;
+          ZFarmPlantBoostResponse farmPlantBoostResponse = 205;
+          ZFarmPlantHarvestRequest farmPlantHarvestRequest = 206;
+          ZFarmPlantHarvestResponse farmPlantHarvestResponse = 207;
+          ZFarmStealRequest farmStealRequest = 208;
+          ZFarmStealResponse farmStealResponse = 209;
+          ZFarmReturnStolenPlantsToThiefRequest farmReturnStolenPlantsToThiefRequest = 210;
+          ZFarmReturnStolenPlantsToThiefResponse farmReturnStolenPlantsToThiefResponse = 211;
+          ZFarmRemoveThiefByBattleRequest farmRemoveThiefByBattleRequest = 212;
+          ZFarmRemoveThiefByBattleResponse farmRemoveThiefByBattleResponse = 213;
+          ZFarmHistoryListRequest farmHistoryListRequest = 214;
+          ZFarmHistoryListResponse farmHistoryListResponse = 215;
+          ZFarmFriendListRequest farmFriendListRequest = 216;
+          ZFarmFriendListResponse farmFriendListResponse = 217;
+          ZFarmOtherListRequest farmOtherListRequest = 218;
+          ZFarmOtherListResponse farmOtherListResponse = 219;
+          ZFarmCommercialInfoRequest farmCommercialInfoRequest = 220;
+          ZFarmCommercialInfoResponse farmCommercialInfoResponse= 221;
+          ZFarmCommercialSeedViewRequest farmCommercialSeedViewRequest = 222;
+          ZFarmCommercialSeedViewResponse farmCommercialSeedViewResponse = 223;
+          ZFarmCookInfoRequest farmCookInfoRequest = 224;
+          ZFarmCookInfoResponse farmCookInfoResponse = 225;
+          ZFarmCookRequest farmCookRequest = 226;
+          ZFarmCookResponse farmCookResponse = 227;
+          ZFarmCookCommercialViewRequest farmCookCommercialViewRequest = 228;
+          ZFarmCookCommercialViewResponse farmCookCommercialViewResponse = 229;
+          ZPortraitNotify portraitNotify = 230;
+          ZFarmMyRestrictionsInfoRequest farmMyRestrictionsInfoRequest = 231;
+          ZFarmMyRestrictionsInfoResponse farmMyRestrictionsInfoResponse = 232;
+          ZFarmChangeNotify farmChangeNotify = 233;
+          ZWorldEventRequest worldEventRequest = 234;
+          ZWorldEventResponse worldEventResponse = 235;
+          ZWorldEventNotify worldEventNotify = 236;
+          ZPlayerEventRequest playerEventRequest = 237;
+          ZPlayerEventResponse playerEventResponse = 238;
+          ZPlayerEventRewardRequest playerEventRewardRequest = 239;
+          ZPlayerEventRewardResponse playerEventRewardResponse = 240;
+          ZPlayerEventNotify playerEventNotify = 241;
+          ZPlayerDailyContentRequest playerDailyContentRequest = 242;
+          ZPlayerDailyContentResponse playerDailyContentResponse = 243;
+          ZPlayerDailyContentRewardRequest playerDailyContentRewardRequest = 244;
+          ZPlayerDailyContentRewardResponse playerDailyContentRewardResponse = 245;
+          ZPlayerDailyContentNotify playerDailyContentNotify = 246;
+          ZPlayerAchievementRequest playerAchievementRequest = 247;
+          ZPlayerAchievementResponse playerAchievementResponse = 248;
+          ZPlayerAchievementNotify playerAchievementNotify = 249;
+          ZPlayerAchievementRewardRequest playerAchievementRewardRequest = 250;
+          ZPlayerAchievementRewardResponse playerAchievementRewardResponse = 251;
+          ZPlayerQuestRequest playerQuestRequest = 252;
+          ZPlayerQuestResponse playerQuestResponse = 253;
+          ZPlayerQuestRewardRequest playerQuestRewardRequest = 254;
+          ZPlayerQuestRewardResponse playerQuestRewardResponse = 255;
+          ZPlayerQuestNotify playerQuestNotify = 256;
+          ZPlayerDuelHistorySaveRequest playerDuelHistorySaveRequest = 257;
+          ZPlayerDuelHistorySaveResponse playerDuelHistorySaveResponse = 258;
+          ZPlayerDuelHistoriesRequest playerDuelHistoriesRequest = 259;
+          ZPlayerDuelHistoriesResponse playerDuelHistoriesResponse = 260;
+          ZClanJoinRequestListRequest clanJoinRequestListRequest = 261;
+          ZClanJoinRequestListResponse clanJoinRequestListResponse = 262;
+          ZClanJoinRequestReplyRequest clanJoinRequestReplyRequest = 263;
+          ZClanJoinRequestReplyResponse clanJoinRequestReplyResponse = 264;
+          ZClanJoinRequestReplyNotify clanJoinRequestReplyNotify = 265;
+          ZAddFriendResponseRequest addFriendResponseRequest = 266;
+          ZAddFriendResponseResponse addFriendResponseResponse = 267;
+          ZCreateClanRequest createClanRequest = 270;
+          ZCreateClanResponse createClanResponse = 271;
+          ZClanInfoRequest clanInfoRequest = 272;
+          ZClanInfoResponse clanInfoResponse = 273;
+          ZPlayerClanJoinRequestListRequest playerClanJoinRequestListRequest = 274;
+          ZPlayerClanJoinRequestListResponse playerClanJoinRequestListResponse = 275;
+          ZPlayerClanJoinRequest playerClanJoinRequest = 276;
+          ZPlayerClanJoinResponse playerClanJoinResponse = 277;
+          ZPlayerClanJoinNotify playerClanJoinNotify = 278;
+          ZClanMemberListRequest clanMemberListRequest = 279;
+          ZClanMemberListResponse clanMemberListResponse = 280;
+          ZGetClanRecommendListRequest getClanRecommendListRequest = 281;
+          ZGetClanRecommendListResponse getClanRecommendListResponse = 282;
+          ZClanNoticeChangeRequest clanNoticeChangeRequest = 283;
+          ZClanNoticeChangeResponse clanNoticeChangeResponse = 284;
+          ZClanIntroductionChangeRequest clanIntroductionChangeRequest = 285;
+          ZClanIntroductionChangeResponse clanIntroductionChangeResponse = 286;
+          ZClanMemberRoleChangeRequest clanMemberRoleChangeRequest = 287;
+          ZClanMemberRoleChangeResponse clanMemberRoleChangeResponse = 288;
+          ZClanMemberRoleChangeNotify clanMemberRoleChangeNotify = 289;
+          ZClanMemberExpulsionRequest clanMemberExpulsionRequest = 290;
+          ZClanMemberExpulsionResponse clanMemberExpulsionResponse = 291;
+          ZClanMemberExpulsionNotify clanMemberExpulsionNotify = 292;
+          ZClanMemberLeaveNotify clanMemberLeaveNotify = 293;
+          ZClanMemberLeaveRequest clanMemberLeaveRequest = 294;
+          ZClanMemberLeaveResponse clanMemberLeaveResponse = 295;
+          ZClanNameChangeRequest clanNameChangeRequest = 296;
+          ZClanNameChangeResponse clanNameChangeResponse = 297;
+          ZPlayerDonateClanRequest playerDonateClanRequest = 298;
+          ZPlayerDonateClanResponse playerDonateClanResponse = 299;
+          ZStoneStatueInfoRequest stoneStatueInfoRequest = 300;
+          ZStoneStatueInfoResponse stoneStatueInfoResponse = 301;
+          ZStoneStatueEnchantSlotLockRequest stoneStatueEnchantSlotLockRequest = 302;
+          ZStoneStatueEnchantSlotLockResponse stoneStatueEnchantSlotLockResponse = 303;
+          ZStoneStatueEnchantChangeSafeGradeRequest stoneStatueEnchantChangeSafeGradeRequest = 304;
+          ZStoneStatueEnchantChangeSafeGradeResponse stoneStatueEnchantChangeSafeGradeResponse = 305;
+          ZStoneStatueEnchantRequest stoneStatueEnchantRequest = 306;
+          ZStoneStatueEnchantResponse stoneStatueEnchantResponse = 307;
+          ZStoneStatueGemLevelUpRequest stoneStatueGemLevelUpRequest = 308;
+          ZStoneStatueGemLevelUpResponse stoneStatueGemLevelUpResponse = 309;
+          ZStoneStatueGemLimitLevelUpRequest stoneStatueGemLimitLevelUpRequest = 310;
+          ZStoneStatueGemLimitLevelUpResponse stoneStatueGemLimitLevelUpResponse = 311;
+          ZStoneStatueAvatarEquipRequest stoneStatueAvatarEquipRequest = 312;
+          ZStoneStatueAvatarEquipResponse stoneStatueAvatarEquipResponse = 313;
+
+          ZPlayerAdvertiseInfoRequest playerAdvertiseInfoRequest = 314;
+          ZPlayerAdvertiseInfoResponse playerAdvertiseInfoResponse = 315;
+
+          ZPlayerClanDissolutionRequest playerClanDissolutionRequest = 316;
+          ZPlayerClanDissolutionResponse playerClanDissolutionResponse = 317;
+
+          ZPlayerBlockFriendWithCodeRequest playerBlockFriendWithCodeRequest = 318;
+          ZPlayerBlockFriendWithCodeResponse playerBlockFriendWithCodeResponse = 319;
+
+          ZChatNotify chatNotify = 1000;
+
+          ZChatRequest chatRequest = 1002;
+          ZChatResponse chatResponse = 1003;
+          ZWhisperRequest whisperRequest = 1004;
+          ZWhisperResponse whisperResponse = 1005;
+
+          ZChatHistoriesRequest chatHistoriesRequest = 1006;
+          ZChatHistoriesResponse chatHistoriesResponse = 1007;
+          }
+}
+
+message ZChatHistoriesRequest {
+    ZChat.Type type = 1;
+    int64 target_id = 2;
+}
+
+message ZChatHistoriesResponse {
+    int32 status = 1;
+    repeated TChatHistory chats = 2;
+}
+
+message ZPlayerBlockFriendWithCodeRequest {
+    string code = 1;
+}
+
+message ZPlayerBlockFriendWithCodeResponse {
+    int32 status = 1;
+    TFriendInfo friend = 2;
+}
+
+message ZPlayerClanDissolutionRequest {
+}
+
+message ZPlayerClanDissolutionResponse {
+    int32 status = 1;
+}
+
+message ZPlayerDonateClanRequest {
+}
+
+message ZPlayerDonateClanResponse {
+    int32 status = 1;
+    repeated TContentReward rewards = 2;
+}
+
+message ZClanJoinRequestListRequest {
+
+}
+
+message ZClanJoinRequestListResponse {
+    int32 status = 1;
+    repeated TClanJoinRequestPlayer requests = 2;
+}
+
+message ZClanJoinRequestReplyRequest {
+    int32 request_id = 1;
+    bool isAccept = 2;
+}
+
+message ZClanJoinRequestReplyResponse {
+    int32 status = 1;
+}
+
+message ZClanJoinRequestReplyNotify {
+    TClan clan = 1;
+}
+
+
+message ZClanNameChangeRequest {
+    string name = 1;
+}
+
+message ZClanNameChangeResponse {
+    int32 status = 1;
+}
+
+message ZClanMemberLeaveRequest {
+}
+message ZClanMemberLeaveResponse {
+    int32 status = 1;
+}
+
+message ZClanMemberExpulsionNotify {
+
+}
+message ZClanMemberExpulsionRequest {
+    int32 member_id = 1;
+}
+
+message ZClanMemberExpulsionResponse {
+    int32 status = 1;
+}
+
+message ZClanMemberLeaveNotify {
+}
+
+message ZClanMemberRoleChangeNotify {
+    ZClanMember.Role role = 1;
+}
+
+message ZPlayerDuelHistorySaveRequest {
+    TPlayerDuelHistory history = 1;
+}
+
+message ZPlayerDuelHistorySaveResponse {
+    int32 status = 1;
+    TPlayerDuelHistory result = 2;
+}
+
+message ZPlayerDuelHistoriesRequest {
+
+}
+
+message ZPlayerDuelHistoriesResponse {
+    int32 status = 1;
+    repeated TPlayerDuelHistory histories = 2;
+}
+
+message ZPlayerQuestRequest {
+}
+
+message ZPlayerQuestResponse {
+    int32 status = 1;
+    TQuest quest = 2;
+}
+
+message ZPlayerQuestRewardRequest {
+}
+
+message ZPlayerQuestRewardResponse {
+    int32 status = 1;
+    repeated TContentReward rewards = 2;
+}
+
+message ZPlayerQuestNotify {
+    TQuest quest = 1;
+}
+
+message ZPlayerAchievementRequest {
+}
+
+message ZPlayerAchievementResponse {
+     int32 status = 1;
+     TAchievements achievements = 2;
+}
+
+message ZPlayerAchievementNotify {
+    TAchievements achievements = 1;
+}
+
+message ZPlayerAchievementRewardRequest {
+    repeated int64 achievement_id = 1;
+}
+
+message ZPlayerAchievementRewardResponse {
+    int32 status = 1;
+    repeated TContentReward rewards = 2;
+}
+
+
+message ZPlayerDailyContentNotify {
+    TPlayerDailyContent daily_contents = 1;
+}
+
+message ZPlayerDailyContentRequest {
+    repeated ZDailyContent.Type types = 1;
+}
+
+message ZPlayerDailyContentResponse {
+    int32 status = 1;
+    repeated TPlayerDailyContent daily_contents = 2;
+}
+
+message ZPlayerDailyContentRewardRequest {
+    ZDailyContent.Type type = 1;
+}
+
+message ZPlayerDailyContentRewardResponse {
+    int32 status = 1;
+    repeated TContentReward rewards = 2;
+}
+
+
+message ZPlayerEventNotify {
+    TPlayerEvent player_events = 1;
+}
+message ZWorldEventRequest {
+}
+
+message ZWorldEventResponse {
+    int32 status = 1;
+    repeated TWorldEvent world_events = 2;
+}
+
+message ZWorldEventNotify {
+    repeated TWorldEvent world_active_events = 1;
+    repeated int64 world_deactive_events = 2;
+}
+
+message ZPlayerEventRequest {
+}
+
+message ZPlayerEventResponse {
+    int32 status = 1;
+    repeated TPlayerEvent player_events = 2;
+}
+
+message ZPlayerEventRewardRequest {
+    int64 event_id = 1;
+    int32 value = 2;
+}
+
+message ZPlayerEventRewardResponse {
+    int32 status = 1;
+    TPlayerEvent event = 2;
+    repeated TContentReward rewards = 3;
+
+}
+
+message ZPlayerShopPassInfoRequest {
+    int64 shop_pass_data_id = 1;
+}
+
+message ZPlayerShopPassInfoResponse {
+    int32 status = 1;
+    TShopPass shop_pass = 2;
+}
+
+message ZPlayerShopPassRewardRequest {
+    int64 shop_pass_data_id = 1;
+    ZShopPassReward.Type type = 2;
+    int32 step = 3;
+}
+
+message ZPlayerShopPassRewardResponse {
+    int32 status = 1;
+    repeated TContentReward rewards = 2;
+}
+
+message ZPlayerPurchaseShopItemRequest {
+    int64 shop_data_id = 1;
+    int64 count = 2;
+}
+
+message ZPlayerPurchaseShopItemResponse {
+    int32 status = 1;
+    repeated TContentReward rewards = 2;
+}
+
+message ZPlayerConditionPackageNotify {
+    repeated TConditionPackage condition_package = 1;
+}
+
+message ZPlayerConditionPackageInfoRequest {
+}
+
+message ZPlayerConditionPackageInfoResponse {
+    int32 status = 1;
+    repeated TConditionPackage condition_packages = 2;
+}
+
+message ZPlayerShopItemInfoRequest {
+}
+
+message ZPlayerShopItemInfoResponse {
+    int32 status = 1;
+    repeated TBuyShopItem shop_items = 2;
+}
+
+message ZPlayerGachaInfoRequest {
+    int64 shop_data_id = 1 ;
+}
+
+message ZPlayerGachaInfoResponse {
+    int32 status = 1;
+    TGacha gacha = 2;
+    TPickUpGacha pick_up_gacha = 3;
+}
+
+message ZPlayerSpawnGachaRequest {
+    int64 shop_data_id = 1;
+    int32 count = 2;
+    ZGachaGrowth.Type type = 3;
+}
+
+message ZPlayerSpawnGachaResponse {
+    int32 status = 1;
+    repeated TContentReward rewards = 2;
+}
+
+message ZPlayerPickUpGachaRewardRequest {
+    int64 shop_data_id = 1;
+    int64 point = 2;
+}
+
+message ZPlayerPickUpGachaRewardResponse {
+    int32 status = 1;
+}
+
+message ZPlayerViewGachaCommercialRequest {
+    int64 shop_data_id = 1;
+}
+
+message ZPlayerViewGachaCommercialResponse {
+    int32 status = 1;
+    repeated TContentReward rewards = 2;
+}
+
+message ZGetPlayerDetailInfoRequest {
+    int64 player_id = 1;
+}
+
+message ZGetPlayerDetailInfoResponse {
+    int32 status = 1;
+    TPlayerDetailInfo player_detail_info = 2;
+}
+
+message ZDuelRequest {
+    int64 player_id = 1;
+}
+
+message ZDuelResponse {
+    int32 status = 1;
+    repeated TStat stats = 2;
+    TPlayerDetailInfo player_detail_info = 3;
+}
+
+message ZPortraitNotify {
+    repeated TPortraitIcon portrait_icons = 1;
+}
+
+message ZDiggingInfoRequest {
+}
+
+message ZDiggingInfoResponse {
+    int32 status = 1;
+    repeated TDigging diggings = 2;
+}
+
+message ZDiggingRequest {
+    repeated int32 index = 1;
+}
+
+message ZDiggingResponse {
+    int32 status = 1;
+    repeated TDigging diggings = 2;
+}
+
+message ZDiggingUpgradeRequest {
+    ZDiggingUpgrade.Type type = 1;
+}
+
+message ZDiggingUpgradeResponse {
+    int32 status = 1;
+    TDiggingUpgrade upgrade = 2;
+}
+
+message ZDiggingUpgradeInfoRequest {
+
+}
+
+message ZDiggingUpgradeInfoResponse {
+    int32 status = 1;
+    repeated TDiggingUpgrade upgrades = 2;
+}
+
+message ZDiggingCompleteRequest {
+    repeated int32 index = 1;
+}
+
+message ZDiggingCompleteResponse {
+    int32 status = 1;
+    repeated TContentReward rewards = 2;
+}
+
+message ZViewDiggingCommercialRequest {
+
+}
+
+message ZViewDiggingCommercialResponse {
+    int32 status = 1;
+    int32 view_count = 2;
+    TItem tItem = 3;
+}
+
+message ZUseAcceleratorRequest {
+    int32 index = 1;
+    int32 count = 2;
+    bool isCommercial = 3;
+}
+
+message ZUseAcceleratorResponse {
+    int32 status = 1;
+    TDigging digging = 2;
+
+}
+
+message ZUseMultiAcceleratorRequest {
+    int32 count = 1;
+}
+
+message ZUseMultiAcceleratorResponse {
+    int32 status = 1;
+    repeated TDigging digging = 2;
+}
+
+message ZAttackPowerRankRequest {
+}
+
+message ZAttackPowerRankResponse {
+    int32 status = 1;
+    TAttackRank my_rank = 2;
+    repeated TAttackRank players = 3;
+}
+
+message ZCurrencyNotify {
+    TCurrencies currencies = 1;
+}
+
+message ZStageBossGaugeOnRequest {
+}
+
+message ZStageBossGaugeOnResponse {
+    int32 status = 1;
+}
+
+message ZStageNotify {
+    int64 stage_group = 1;
+    int64 stage = 2;
+}
+
+message ZItemNotify {
+    repeated TItem items = 1;
+}
+
+message ZGrowthNotify {
+    repeated TGrowth growths = 1;
+}
+
+message ZAvatarNotify {
+    repeated TAvatar avatars = 1;
+}
+
+message ZClanMemberRoleChangeRequest {
+    int32 member_id = 1;
+    ZClanMember.Role role = 2;
+}
+
+message ZClanMemberRoleChangeResponse {
+    int32 status = 1;
+}
+
+
+message ZClanIntroductionChangeRequest {
+    string introduction = 1;
+    ZClanJoin.Type type = 2;
+}
+
+message ZClanIntroductionChangeResponse {
+    int32 status = 1;
+}
+
+message ZClanNoticeChangeRequest {
+    string notice = 1;
+}
+
+message ZClanNoticeChangeResponse {
+    int32 status = 1;
+}
+
+message ZGetClanRecommendListRequest  {
+    string include_name = 1;
+}
+
+message ZGetClanRecommendListResponse {
+    int32 status = 1;
+    repeated TClan clans = 2;
+}
+
+message ZClanMemberListRequest {
+}
+
+message ZClanMemberListResponse {
+    int32 status = 1;
+    repeated TClanMember members = 2;
+}
+
+message ZPlayerClanJoinNotify {
+    TClan clan = 1;
+    TClanMember member = 2;
+}
+
+message ZPlayerClanJoinRequest {
+    int32 clan_id = 1;
+}
+
+message ZPlayerClanJoinResponse {
+    int32 status = 1;
+    TClan clan = 2;
+    TClanMember member = 3;
+}
+
+message ZPlayerClanJoinRequestListRequest {
+
+}
+
+message ZPlayerClanJoinRequestListResponse {
+    int32 status = 1;
+    repeated TClanJoinRequest requests = 2;
+}
+
+message ZViewAdvertiseRequest {
+    int64 id = 1;
+}
+
+message ZViewAdvertiseResponse {
+    int32 status = 1;
+    repeated TContentReward rewards = 2;
+}
+
+message ZCheatRequest {
+    string command = 1;
+}
+
+message ZCheatResponse {
+    int32 status = 1;
+    string command = 2;
+}
+
+
+message ZPing {
+}
+
+message ZLoginRequest {
+   string token_id = 1;
+   ZLogin.Type login_type = 2;
+   string device_os = 3;
+   string device_model = 4;
+   string version = 5;
+}
+
+message ZLoginResponse {
+    int32 status = 1;
+    TPlayer player = 2;
+    repeated TItem items = 3;
+    repeated TGrowth growths = 4;
+    repeated TAvatar avatars = 5;
+    repeated TPortraitIcon portrait_icons = 6;
+    repeated TStat stats = 7;
+    repeated TEquipPresets presets = 8;
+    TCurrencies currencies = 9;
+    string guest_token_id = 10;
+}
+
+message ZStatsNotify {
+    int64 attack_power = 1;
+    repeated TStat stats = 2;
+}
+
+message ZLogoutRequest {
+}
+
+message ZLogoutResponse {
+    int32 status = 1;
+    ZLogout.Type type = 2;
+}
+
+message ZLogoutNotify {
+    ZLogout.Type type = 1;
+}
+
+message ZChangeEquipAvatarRequest {
+    int64 avatar_id = 1;
+}
+
+message ZChangeEquipAvatarResponse {
+    int32 status = 1;
+}
+
+message ZGrowthLevelUpRequest {
+    int64 growth_id = 1;
+    TMaterial material = 2;
+}
+
+message ZGrowthLevelUpResponse {
+    int32 status = 1;
+    TGrowth growth = 2;
+}
+
+message ZGrowthPromoteRequest {
+    repeated TMaterial promote_targets = 1;
+}
+
+message ZGrowthPromoteResponse {
+    int32 status = 1;
+    repeated TGrowth growths = 2;
+}
+
+message ZGrowthLimitBreakRequest {
+    repeated TMaterial limitBreak_targets = 2;
+}
+
+message ZGrowthLimitBreakResponse {
+    int32 status = 1;
+    repeated TGrowth growths = 2;
+}
+
+message ZGrowthEquipPartsRequest {
+    int64 growth_id = 1;
+}
+
+message ZGrowthEquipPartsResponse {
+    int32 status = 1;
+}
+
+message ZPartsSlotLevelUpRequest {
+    ZPartsSlot.Type type = 1;
+    int32 level_up_count = 2;
+}
+
+message ZPartsSlotLevelUpResponse {
+    int32 status = 1;
+    TPartsSlot parts = 2;
+}
+message ZPartsSlotRequest {
+}
+
+message ZPartsSlotResponse {
+    int32 status = 1;
+    repeated TPartsSlot partsSlots = 2;
+}
+
+message ZMailRequest {
+}
+
+
+message ZMailResponse {
+    int32 status = 1;
+    repeated TMail mails = 2;
+}
+
+message ZMailReadRequest {
+    repeated int64 mail_ids = 1;
+}
+
+message ZMailReadResponse {
+    int32 status = 1;
+    repeated TMail mail = 2;
+}
+
+message ZMailNotify {
+    TMail mail = 1;
+}
+
+message ZCollectionRequest {
+}
+
+message ZCollectionResponse {
+    int32 status = 1;
+    repeated TCollection collections = 2;
+}
+
+message ZCollectionLevelUpRequest {
+    repeated TCollectionLevelUp targets = 1;
+}
+
+message ZCollectionLevelUpResponse {
+    int32 status = 1;
+    repeated TCollection collections = 2;
+}
+
+message ZSyncItemCountRequest {
+    repeated TItem need_sync_items = 1;
+}
+
+message ZSyncItemCountResponse {
+    int32 status = 1;
+}
+
+message ZStageClearSaveRequest {
+    int64 stage_group = 1;
+    int32 stage = 2;
+}
+
+message ZStageClearSaveResponse {
+    int32 status = 1;
+    TNextStageInfo next_stage_info = 2;
+}
+
+message TNextStageInfo {
+    int64 stage_group = 1;
+    int32 stage = 2;
+}
+
+message ZChangePortraitIconRequest {
+    int64 portrait_icon_id = 1;
+}
+
+message ZChangePortraitIconResponse {
+    int32 status = 1;
+}
+
+message ZChangePlayerNameRequest {
+    string name = 1;
+}
+
+message ZChangePlayerNameResponse {
+    int32 status = 1;
+    int64 change_remain_time = 2;
+}
+
+message ZStatsRequest {
+}
+
+message ZStatsResponse {
+    int32 status = 1;
+    repeated TStat stats = 2;
+}
+
+message ZCharacterStatGrowthRequest {
+}
+
+message ZCharacterStatGrowthResponse {
+    int32 status = 1;
+    TStatGrowthPage stat_growth_page = 2;
+}
+
+message ZCharacterStatGrowthLevelUpRequest {
+    ZStat.Type target_type = 1;
+    int32 level_count = 2;
+}
+
+message ZCharacterStatGrowthLevelUpResponse {
+    int32 status = 1;
+    TStatGrowthPage stat_growth_page = 2;
+}
+
+message ZEquipPresetRequest {
+
+}
+
+message ZEquipPresetResponse {
+    int32 status = 1;
+    repeated TEquipPresets presets = 2;
+}
+
+message ZEquipPresetEquipRequest {
+    int32 preset_index = 1;
+    ZPreset.Type type = 2;
+    repeated TEquipPreset equip = 3;
+}
+
+message ZEquipPresetEquipResponse {
+    int32 status = 1;
+    TEquipPresetsByType equips = 2;
+}
+
+message ZEquipPresetUnEquipRequest {
+    int32 preset_index = 1;
+    ZPreset.Type type = 2;
+    int32 index = 3;
+}
+
+message ZEquipPresetUnEquipResponse {
+    int32 status = 1;
+    TEquipPresetsByType equips = 2;
+}
+
+message ZEquipPresetNameChangeRequest {
+    int32 index = 1;
+    string name = 2;
+}
+
+message ZEquipPresetNameChangeResponse {
+    int32 status = 1;
+    TEquipPresetName name = 2;
+}
+
+message ZEquipPresetIndexChangeRequest {
+    int32 index = 1;
+}
+
+message ZEquipPresetIndexChangeResponse {
+    int32 status = 1;
+}
+
+message ZPlayerLevelUpNotify {
+    int32 level = 1;
+    int64 exp = 2;
+}
+
+message ZDailyDungeonRequest {
+}
+
+message ZDailyDungeonResponse {
+    int32 status = 1;
+    repeated TDailyDungeon dungeons = 2;
+}
+
+message ZDailyDungeonViewAdvertiseRequest {
+    int64 id = 1;
+    int32 stage_id = 2;
+}
+
+message ZDailyDungeonViewAdvertiseResponse {
+    int32 status = 1;
+    TDailyDungeon daily_dungeon = 2;
+}
+
+message ZRaidDungeonViewAdvertiseRequest {
+    int64 id = 1;
+}
+
+message ZRaidDungeonViewAdvertiseResponse {
+    int32 status = 1;
+    TRaidDungeon raid_dungeon = 2;
+}
+
+message ZDailyDungeonStartRequest {
+    int64 id = 1;
+    int32 stage_id = 2;
+}
+
+message ZDailyDungeonStartResponse {
+    int32 status = 1;
+}
+
+message ZTowerStartRequest {
+    int64 id = 1;
+    int32 stage_id = 2;
+}
+
+message ZTowerStartResponse {
+    int32 status = 1;
+}
+
+message ZRaidDungeonStartRequest {
+    int64 id = 1;
+    int32 stage_id = 2;
+}
+
+message ZRaidDungeonStartResponse {
+    int32 status = 1;
+}
+
+message ZDailyDungeonClearRequest {
+    int64 id = 1;
+    int32 stage_id = 2;
+    int32 use_ticket_count = 3;
+}
+
+message ZDailyDungeonClearResponse {
+    int32 status = 1;
+    TDailyDungeon daily_dungeon = 2;
+    repeated TContentReward rewards = 3;
+}
+
+message ZTowerClearRequest {
+    int64 id = 1;
+    int32 stage_id = 2;
+}
+
+message ZTowerClearResponse {
+    int32 status = 1;
+    TTower tower = 2;
+    repeated TContentReward rewards = 3;
+}
+
+message ZTowerRequest {
+}
+
+message ZTowerResponse {
+    int32 status = 1;
+    repeated TTower tower = 2;
+}
+
+message ZRaidDungeonClearRequest {
+    int64 id = 1;
+    int32 stage_id = 2;
+    int64 score = 3;
+}
+
+message ZRaidDungeonClearResponse {
+    int32 status = 1;
+    TRaidDungeon raid_dungeon = 2;
+    repeated TContentReward rewards = 3;
+}
+message ZRaidDungeonRequest {
+}
+
+message ZRaidDungeonResponse {
+    int32 status = 1;
+    repeated TRaidDungeon raid_dungeon = 2;
+}
+
+message ZCooperativeRaidDungeonRequest {
+    int64 id = 1;
+}
+
+message ZCooperativeRaidDungeonResponse {
+    int32 status = 1;
+    TCooperativeRaidDungeon cooperative_raid_info = 2;
+}
+
+message ZCompetitiveRaidDungeonRequest {
+    int64 id = 1;
+}
+
+message ZCompetitiveRaidDungeonResponse {
+    int32 status = 1;
+    TCompetitiveRaidDungeon competitive_raid_info = 2;
+}
+
+message ZCompetitiveRaidDungeonRankRequest {
+    int64 data_id = 1;
+    int32 start_rank = 2;
+}
+
+message ZCompetitiveRaidDungeonRankResponse {
+    int32 status = 1;
+    repeated TCompetitiveRaidDungeonPlayerRankInfo players = 2;
+    int32 next_rank = 3;
+}
+
+message ZFriendListRequest {
+}
+
+message ZFriendListResponse {
+    int32 status = 1;
+    repeated TFriendInfo friends = 2;
+}
+
+message ZAddFriendRequest {
+    string friend_code = 1;
+}
+
+message ZAddFriendResponse {
+    int32 status = 1;
+    TFriendInfo friend = 2;
+}
+
+message ZDeleteFriendRequest {
+    int64 friend_id = 1;
+}
+
+message ZDeleteFriendResponse {
+    int32 status = 1;
+}
+
+message ZGiveFriendGiftRequest {
+    repeated int64 friend_ids = 1;
+}
+
+message ZGiveFriendGiftResponse {
+    int32 status = 1;
+    repeated TFriendInfo friends = 2;
+}
+
+message ZSearchFriendRequest {
+    string search_text = 1;
+}
+
+message ZSearchFriendResponse {
+    int32 status = 1;
+    TPlayerSimpleInfo friend = 2;
+}
+
+message ZAddFriendCancelRequest {
+    int64 friend_id = 1;
+}
+
+message ZAddFriendCancelResponse {
+    int32 status = 1;
+}
+
+message ZAddFriendResponseRequest {
+    int64 friend_id = 1;
+    bool isAccept = 2;
+}
+
+message ZAddFriendResponseResponse {
+    int32 status = 1;
+    TFriendInfo friend = 2;
+}
+
+message ZRecommendFriendRequest {
+}
+
+message ZRecommendFriendResponse {
+    int32 status = 1;
+    repeated TPlayerSimpleInfo friends = 2;
+}
+
+message ZAddFriendNotify {
+    TFriendInfo request_player = 1;
+}
+
+message ZDeleteFriendNotify {
+    int64 delete_friend_id = 1;
+}
+
+message ZChangeFriendStateNotify {
+    int64 friend_id = 1;
+    ZFriend.State state = 2;
+}
+
+message ZBlockPlayerRequest {
+    int64 player_id = 1;
+}
+
+message ZBlockPlayerResponse {
+    int32 status = 1;
+    TPlayerSimpleInfo player = 2;
+}
+
+message ZUnBlockPlayerRequest {
+    int64 player_id = 1;
+}
+
+message ZUnBlockPlayerResponse {
+    int32 status = 1;
+}
+
+message ZPlayerBlockListRequest {
+
+}
+
+message ZPlayerBlockListResponse {
+    int32 status = 1;
+    repeated TPlayerSimpleInfo block_players = 2;
+}
+
+message ZViewExplorationNotify {
+    int32 level = 1;
+    int32 exp = 2;
+    bool auto = 3;
+    repeated TExplorationQuest quest = 4;
+}
+
+message ZExplorationStartRequest {
+    int32 slot_id = 1;
+    int32 created_ymd = 2;
+    repeated int64 pet_id = 3;
+}
+
+message ZExplorationStartResponse {
+    int32 status = 1;
+    TExplorationQuest quest = 2;
+}
+
+message ZExplorationEndRequest {
+    int32 slot_id = 1;
+}
+
+message ZExplorationEndResponse {
+    int32 status = 1;
+    int32 level = 2;
+    int64 exp = 3;
+    TContentReward reward = 4;
+    TExplorationQuest quest = 5;
+}
+
+message ZExplorationChangeRequest {
+    int32 slot_id = 1;
+}
+
+message ZExplorationChangeResponse {
+    int32 status = 1;
+    TExplorationQuest quest = 2;
+}
+
+message ZViewExplorationCommercialRequest {
+
+}
+
+message ZViewExplorationCommercialResponse {
+    int32 status = 1;
+    int32 view_count = 2;
+}
+
+message ZExplorationCommercialRequest {
+    int32 slot_id = 1;
+    int32 view_count = 2;
+}
+
+message ZExplorationCommercialResponse {
+    int32 status = 1;
+    int32 view_count = 2;
+    TExplorationQuest quest = 3;
+}
+
+message ZExplorationAccelerationRequest {
+    int32 slot_id = 1;
+    int32 count = 2;
+}
+
+message ZExplorationAccelerationResponse {
+    int32 status = 1;
+    TExplorationQuest quest = 2;
+}
+
+message ZExplorationEditAutoRequest {
+    bool auto = 1;
+}
+
+message ZExplorationEditAutoResponse {
+    int32 status = 1;
+    bool auto = 2;
+}
+
+message ZFarmInfoRequest {
+    int32 player_id = 1;
+}
+
+message ZFarmInfoResponse {
+    int32 status = 1;
+    TFarm farm = 2;
+}
+
+message ZFarmPlantSeedRequest {
+    repeated int32 slot_index = 1;
+}
+
+message ZFarmPlantSeedResponse {
+    int32 status = 1;
+    TFarm farm = 2;
+}
+
+message ZFarmPlantBoostRequest {
+    repeated TFarmBoost boosts = 1;
+}
+
+message ZFarmPlantBoostResponse {
+    int32 status = 1;
+    TFarm farm = 2;
+}
+
+message ZFarmPlantHarvestRequest {
+    repeated int32 slot_index = 1;
+}
+
+message ZFarmPlantHarvestResponse {
+    int32 status = 1;
+    TFarm farm = 2;
+}
+
+message ZFarmStealRequest {
+    int32 player_id = 1;
+    int32 slot_index = 2;
+}
+
+message ZFarmStealResponse {
+    int32 status = 1;
+    TFarm farm = 2;
+}
+
+message ZFarmReturnStolenPlantsToThiefRequest {
+    int32 player_id = 1;
+    int32 slot_index = 2;
+}
+
+message ZFarmReturnStolenPlantsToThiefResponse {
+    int32 status = 1;
+    TFarm farm = 2;
+}
+
+message ZFarmRemoveThiefByBattleRequest {
+    int32 slot_index = 1;
+}
+
+message ZFarmRemoveThiefByBattleResponse {
+    int32 status = 1;
+    TFarm farm = 2;
+}
+
+message ZFarmHistoryListRequest {
+}
+
+message ZFarmHistoryListResponse {
+    int32 status = 1;
+    repeated TFarmHistory histories = 2;
+    repeated TFarmBattleHistory battle_histories = 3;
+}
+
+message ZFarmFriendListRequest {
+}
+
+message ZFarmFriendListResponse {
+    int32 status = 1;
+    repeated TFarm friends = 2;
+}
+
+message ZFarmOtherListRequest {
+}
+
+message ZFarmOtherListResponse {
+    int32 status = 1;
+    repeated TFarm others = 2;
+    repeated TFarm enemies = 3;
+}
+
+message ZFarmCommercialInfoRequest {
+}
+
+message ZFarmCommercialInfoResponse {
+    int32 status = 1;
+    int32 view_count = 2;
+}
+
+message ZFarmCommercialSeedViewRequest {
+}
+
+message ZFarmCommercialSeedViewResponse {
+    int32 status = 1;
+    int32 view_count = 2;
+}
+
+message ZFarmCookInfoRequest {
+}
+
+message ZFarmCookInfoResponse {
+    int32 status = 1;
+    int32 level = 2;
+    repeated TFarmCookSlot slots = 4;
+}
+
+message ZFarmCookRequest {
+
+}
+
+message ZFarmCookResponse {
+    int32 status = 1;
+    int32 level = 2;
+}
+
+message ZFarmCookCommercialViewRequest {
+    int32 slot_id = 1;
+}
+
+message ZFarmCookCommercialViewResponse {
+    int32 status = 1;
+    int32 slot_id = 2;
+    int64 until_at = 3;
+}
+
+message ZFarmMyRestrictionsInfoRequest {
+}
+
+message ZFarmMyRestrictionsInfoResponse {
+    int32 status = 1;
+    int32 active_steal_count = 2; //현재 도둑질하고 있는 횟수
+    int32 steal_limit_count = 3; //오늘 도둑질한 횟수
+}
+
+message ZFarmChangeNotify {
+    TFarm farm = 1;
+}
+
+message ZStoneStatueInfoRequest {
+}
+
+message ZStoneStatueInfoResponse {
+    int32 status = 1;
+    TStoneStatue stone_statue = 2;
+    repeated TStoneStatueEnchant stone_statue_enchants = 3;
+    repeated int64 stone_statue_avatar_ids = 4;
+    repeated TStoneStatueGem stone_statue_gems = 5;
+}
+
+message ZStoneStatueEnchantSlotLockRequest {
+    int32 order_id = 1;
+    int32 slot_id = 2;
+    bool is_locked = 3;
+}
+
+message ZStoneStatueEnchantSlotLockResponse {
+    int32 status = 1;
+    TStoneStatueEnchant stone_statue_enchant = 2;
+}
+
+message ZStoneStatueEnchantChangeSafeGradeRequest {
+    ZTier.Type tier = 1;
+}
+
+message ZStoneStatueEnchantChangeSafeGradeResponse {
+    int32 status = 1;
+}
+
+message ZStoneStatueEnchantRequest {
+
+}
+
+message ZStoneStatueEnchantResponse {
+    int32 status = 1;
+    optional TStoneStatueEnchant stone_statue_enchant = 2;
+    int32 enchant_level = 3;
+    int32 enchant_exp = 4;
+}
+
+message ZStoneStatueGemLevelUpRequest {
+    int64 gem_id = 1;
+}
+
+message ZStoneStatueGemLevelUpResponse {
+    int32 status = 1;
+    TStoneStatueGem gem = 2;
+}
+
+message ZStoneStatueGemLimitLevelUpRequest {
+
+}
+
+message ZStoneStatueGemLimitLevelUpResponse {
+    int32 status = 1;
+    int32 level = 2;
+}
+
+message ZStoneStatueAvatarEquipRequest {
+    int32 avatar_id = 1;
+}
+
+message ZStoneStatueAvatarEquipResponse {
+    int32 status = 1;
+}
+
+message ZChatNotify {
+    string source_name = 1;
+    int64 source_portrait_id = 2;
+    string text = 3;
+    int64 time = 4;
+}
+
+message ZChatRequest {
+    TChat chat = 1;
+}
+
+message ZChatResponse {
+    int32 status = 1;
+}
+
+message ZWhisperRequest {
+    TWhisper whisper = 1;
+}
+
+message ZWhisperResponse {
+    int32 status = 1;
+}
+
+message ZCreateClanRequest {
+    string clan_name = 1;
+}
+
+message ZCreateClanResponse {
+    int32 status = 1;
+    TClan clan = 2;
+    TClanMember member = 3;
+}
+
+message ZClanInfoRequest {
+    int32 clan_id = 1;
+}
+
+message ZClanInfoResponse {
+    int32 status = 1;
+    TClan clan = 2;
+}
+
+message ZPlayerAdvertiseInfoRequest {
+    repeated ZContentAdvertise.Type types = 1;
+}
+
+message ZPlayerAdvertiseInfoResponse {
+    int32 status = 1;
+    repeated TAdvertiseInfo advertise_infos = 2;
+}
+
+// -------------------------------------------------------DATA
+
+message TCooperativeRaidDungeon {
+    int64 server_score = 1;
+    int64 player_score = 2;
+    string player_name = 3;
+    int32 remain_ticket_count = 4;
+    int32 remain_ad_view_count = 5;
+}
+
+message TCompetitiveRaidDungeon {
+    TCompetitiveRaidDungeonPlayer player = 1;
+    TCompetitiveRaidDungeonTopPlayer top_player = 2;
+}
+
+message TCompetitiveRaidDungeonPlayer {
+    int64 player_score = 1;
+    int32 player_rank = 2;
+    string player_name = 3;
+    int64 avatar_id = 4;
+    int32 remain_ticket_count = 5;
+    int32 remain_ad_view_count = 6;
+}
+
+message TCompetitiveRaidDungeonTopPlayer {
+    int64 player_score = 1;
+    string player_name = 2;
+    int64 avatar_id = 3;
+}
+
+message TCompetitiveRaidDungeonPlayerRankInfo {
+    int32 player_rank = 1;
+    string player_name = 2;
+    int64 player_score = 3;
+}
+
+
+message TDailyDungeon {
+    int64 id = 1;
+    int32 stage = 2;
+    int32 remain_ticket_count = 3;
+    int32 remain_ad_view_count = 4;
+}
+
+message TTower {
+    int64 id = 1;
+    int32 stage = 2;
+}
+
+message TRaidDungeon {
+    int64 id = 1;
+    int64 score = 2;
+    int32 remain_ticket_count = 3;
+    int32 remain_ad_view_count = 4;
+}
+
+message TEquipPresetName {
+    int32 index = 1;
+    string name = 2;
+}
+
+message TStatGrowthPage {
+    int64 page = 1;
+    repeated TStatGrowth stat_growths = 2;
+}
+
+message TStatGrowth {
+    ZStat.Type type = 1;
+    int32 level = 2;
+}
+
+message TMail {
+    int64 mail_id = 1;
+    ZMail.Type mail_type = 2;
+    repeated TMailReward rewards = 3;
+    bool is_read = 4;
+    int64 expire_time = 5;
+    string sender = 6;
+}
+
+message TMailReward {
+    ZCategory.Type category = 1;
+    int64 data_id = 2;
+    int64 count = 3;
+}
+
+
+message TPlayer {
+    int64 player_id = 1;
+    string name = 2;
+    int32 level = 3;
+    int64 exp = 4;
+    int64 stage_group = 5;
+    int32 stage = 6;
+    int32 preset_index = 7;
+    int64 portrait_id = 8;
+    int64 attack_power = 9;
+    bool on_boss_gauge = 10;
+    bool remove_ad = 11;
+    string friend_code = 12;
+}
+
+message TItem {
+    int64 id = 1;
+    int64 data_id = 2;
+    int64 count = 3;
+}
+
+message TGrowth {
+    int64 id = 1;
+    int64 growth_id = 2;
+    int64 count = 3;
+    int32 level = 4;
+    int32 promote_level = 5;
+    int32 limit_break_level = 6;
+    ZGrowth.Type type = 7;
+}
+
+message TAvatar {
+    int64 avatar_id = 1;
+    bool is_equip = 2;
+}
+
+message TPortraitIcon {
+    int64 icon_id = 1;
+}
+
+message TStat {
+    ZStat.Type type = 1;
+    double value = 2;
+}
+
+message TUnit {
+     int64 id = 1;
+     int32 type = 2;
+     string name = 3;
+     int64 unitID = 4;
+     int32 posX = 5;
+     int32 posY = 6;
+     int32 hp = 7;
+     int32 maxHP = 8;
+     int32 teamTag = 9;
+     bool dead = 10;
+     int32 state = 11;
+     int64 heroPetItemID = 12;
+}
+
+message TMaterial {
+    int64 id = 1;
+    int64 count = 2;
+}
+
+message TCollection {
+   ZResource.Type type = 1;
+   int64 data_id = 2;
+   int32 level = 3;
+}
+
+message TCollectionLevelUp {
+   ZResource.Type type = 1;
+   int64 data_id = 2;
+   int32 target_level = 3;
+}
+
+message TPartsSlot {
+    ZPartsSlot.Type type = 1;
+    int32 level = 2;
+}
+
+message TEquipPreset {
+    int32 equip_index = 1;
+    int64 data_id = 2;
+}
+
+message TEquipPresetsByType {
+    ZPreset.Type type = 1;
+    repeated TEquipPreset equips = 2;
+}
+
+message TEquipPresets {
+    int32 preset_index = 1;
+    string preset_name = 2;
+    repeated TEquipPresetsByType equips = 3;
+}
+
+message TContentReward {
+    ZCategory.Type category = 1;
+    int64 data_id = 2;
+    int64 count = 3;
+    int64 bonus_count = 4;
+}
+
+message TPlayerDetailInfo {
+    int64 player_id = 1;
+    string name = 2;
+    int64 portrait_id = 3;
+    int64 avatar_id = 4;
+    int32 level = 5;
+    int64 attack_power = 6;
+    string friend_code = 7;
+    int64 gift_expire_time = 8;
+    int64 time_since_last_logout_time = 9;
+    repeated TCharacterGrowthInfo growths = 10;
+
+}
+
+message TFriendInfo {
+    int64 player_id = 1;
+    int64 friend_id = 2;
+    string name = 3;
+    int64 portrait_id = 4;
+    int32 level = 5;
+    int64 attack_power = 6;
+    ZFriend.State state = 7;
+    int64 gift_expire_time = 8;
+    int64 time_since_last_logout_time = 9;
+    string friend_code = 10;
+}
+
+message TPlayerSimpleInfo {
+    int64 player_id = 1;
+    string friend_code = 2;
+    string name = 3;
+    int32 level = 4;
+    int64 attack_power = 5;
+    int64 portrait_id = 6;
+    int64 time_since_last_logout_time = 7;
+}
+
+message TCharacterGrowthDetailInfo {
+    int32 equip_index = 1;
+    TGrowth growth = 2;
+}
+
+message TCharacterGrowthInfo {
+    ZPreset.Type type = 1;
+    repeated TCharacterGrowthDetailInfo info = 2;
+}
+
+message TExplorationQuest {
+    int32 slot_id = 1;
+    ZTier.Type tier = 2;
+    repeated int64 pet_id = 3;
+    repeated ZTier.Type need_pet_tier = 4;
+    TContentReward reward = 5;
+    int64 until_at = 6;
+    int32 elapsed_time_unit = 7; // 분단위
+    int32 earn_exp = 8;
+    int32 created_ymd = 9; // 임무생성 년월일
+}
+
+message TCurrencies {
+    int64 gold = 1;
+    int64 free_ruby = 2;
+    int64 paid_ruby = 3;
+    int64 free_diamond = 4;
+    int64 paid_diamond = 5;
+}
+
+message TAttackRank {
+    int64 player_id = 1;
+    int32 rank = 2;
+    int64 avatar_id = 3;
+    int64 portrait_id = 4;
+    int32 level = 5;
+    string name = 6;
+    int64 attack_power = 7;
+}
+
+message TFarm {
+    int64 player_id = 1;
+    string name = 2;
+    int32 level = 3;
+    int64 exp = 4;
+    int64 attack_power = 5;
+    int64 portrait_id = 6;
+    repeated TFarmPlant farm_plant = 7;
+}
+
+message TFarmPlant {
+    int32 slot_index = 1;
+    int64 plant_id = 2;
+    int64 start_at = 3;
+    int64 end_at = 4;
+    int64 theft_player_id = 5;
+    int64 theft_end_at = 6;
+    int32 theft_limit_count = 7; //농장 도둑질 당한 횟수
+}
+
+message TFarmBoost {
+    int32 slot_index = 1;
+    int32 count = 2;
+    bool isCommercial = 3;
+}
+
+message TFarmHistory {
+    int64 player_id = 1;
+    int32 type = 2;
+    optional string data = 3;
+    int64 portrait_id = 4;
+    int64 created_at = 5;
+}
+
+message TFarmBattleHistory {
+    int64 winner_player_id = 1; // 승자
+    string farm_name = 2; // 전투 장소
+    string player_a_name = 3;
+    string player_b_name = 4;
+    int64 player_a_portrait_id = 5;
+    int64 player_b_portrait_id = 6;
+    int64 player_a_attack_power = 7;
+    int64 player_b_attack_power = 8;
+    int64 created_at = 9;
+}
+
+message TFarmCookSlot {
+    int32 slot_id = 1;
+    int64 until_at = 2;
+}
+
+message TDigging {
+    int32 index = 1;
+    ZTier.Type type = 2;
+    int64 remain_time = 3;
+}
+
+message TDiggingUpgrade {
+    ZDiggingUpgrade.Type type = 1;
+    int32 level = 2;
+}
+
+message TGacha {
+    int32 level = 1;
+    int64 exp = 2;
+    int32 view_commercial_count = 3;
+    int32 spawn_gacha_max_count = 4;
+}
+
+message TPickUpGacha {
+    int32 point = 1;
+    repeated int32 get_rewards = 2;
+}
+
+message TBuyShopItem {
+    int64 shop_data_id = 1;
+    int64 count = 2;
+    int32 ad_view_count = 3;
+}
+
+message TConditionPackage {
+    int64 package_id = 1;
+    int64 expire_at = 2;
+}
+
+message TShopPass {
+    int64 shop_pass_id = 1;
+    int32 open_step = 2;
+    int32 last_free_reward_step = 3;
+    int32 last_paid_reward_step = 4;
+    bool is_paid = 5;
+}
+
+message TWorldEvent {
+    int64 id = 1;
+    int64 event_data_id = 2;
+    int64 start_at = 3;
+    int64 end_at = 4;
+    int64 display_at = 5;
+}
+
+message TPlayerEvent {
+    int64 id = 1;
+    int64 event_data_id = 2;
+    int32 progress = 3;
+    ZEventProgress.State state = 4;
+    string rewards = 5;
+}
+
+message TPlayerDailyContent {
+    ZDailyContent.Type type = 1;
+    int32 progress = 2;
+    ZReward.State state = 3;
+    string rewards = 4;
+    int64 remain_time = 5;
+}
+
+message TAchievements {
+    repeated TAchievement achievements = 1;
+}
+
+message TAchievement {
+    int64 id = 1;
+    int64 progress = 2;
+    ZClear.State state = 3;
+}
+
+message TQuest {
+    ZClear.State state = 1;
+    int32 step = 2;
+    int64 progress = 3;
+    int64 next_stage_group_id_condition = 4;
+    int32 next_stage_id_condition = 5;
+}
+
+message TStoneStatue {
+    int32 enchant_level = 1;
+    int32 enchant_exp = 2;
+    ZTier.Type enchant_safe_grade = 3;
+    int64 avatar_id = 4;
+}
+
+message TStoneStatueEnchant {
+    int32 order_id = 1;
+    repeated TStoneStatueEnchantSlot stone_statue_enchants = 2;
+}
+
+message TStoneStatueEnchantSlot {
+    int32 slot_id = 1;
+    bool is_locked = 2;
+    ZTier.Type tier = 3;
+    TStat stat = 4;
+}
+
+message TStoneStatueGem {
+    int64 id = 1;
+    int32 level = 2;
+}
+
+message TPlayerDuelHistory {
+    int64 id = 1;
+    TPlayerDuel win_player = 2;
+    TPlayerDuel lose_player = 3;
+    int32 critical_seed = 4;
+}
+
+message TPlayerDuel {
+    int64 player_id = 1;
+    string name = 2;
+    int64 avatar_id = 3;
+    int32 seed = 4;
+}
+
+message TClan {
+    int64 clan_id = 1;
+    int32 clan_level = 2;
+    int32 clan_exp = 3;
+    string clan_name = 4;
+    string master_player_name = 5;
+    int32 rank = 6;
+    string notice = 7;
+    ZClanJoin.Type join_type = 8;
+    ZClan.State  state = 9;
+    int32 member_count = 10;
+    int64 total_attack_power = 11;
+}
+
+message TClanJoinRequestPlayer {
+    int64 request_id = 1;
+    string player_name = 2;
+    int32 level = 3;
+    int64 portrait_id = 4;
+    int64 attack_power = 5;
+}
+
+message TClanJoinRequest {
+    int64 clan_id = 1;
+    int32 clan_level = 2;
+    string clan_name = 3;
+    int32 rank = 4;
+    int32 clan_member_count = 5;
+}
+
+message TClanMember {
+    int64 portrait_id = 1;
+    string name = 2;
+    int32 level = 3;
+    int32 contribution = 4;
+    int64 attack_power = 5;
+    ZClanMember.Role role = 6;
+}
+
+message TAdvertiseInfo {
+    ZContentAdvertise.Type type = 1;
+    int32 view_count = 2;
+}
+
+message TChat {
+    ZChat.Type type = 1;
+    string text = 2;
+}
+
+message TWhisper {
+    int64 target_player_id = 1;
+    string text = 2;
+}
+
+message TChatHistory {
+    int64 player_id = 1;
+    string name = 2;
+    int64 portrait_id = 3;
+    string text = 4;
+    int64 time = 5;
+}

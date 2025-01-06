@@ -1,0 +1,10 @@
+rootProject.name = 'growstone'
+include 'growstone-network'
+include 'growstone-server'
+include 'growstone-database'
+include 'growstone-core'
+include 'growstone-network'
+include 'growstone-resource'
+include 'growstone-game-core'
+include 'growstone-redis'
+

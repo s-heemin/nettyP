@@ -1,0 +1,607 @@
+2024-08-26 12:19:45 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-26 12:19:46 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@248deced
+2024-08-26 12:19:46 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items-PortraitIcon.xml)
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceItemManager@7fb33394
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:19:46 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:19:46 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@3b2f4a93
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:19:46 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:19:46 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@213bd3d5
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Collections.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceCollectionManager@327ed9f5
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\PartsSlots.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourcePartsSlotManager@7c551ad4
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Maps.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceMapManager@367d2816
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StageGroups.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStageGroupManager@65b66b08
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\DropTables.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDropTableManager@5b275174
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Avatars.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAvatarManager@2f651f93
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StatGrowths.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStatGrowthManager@4e93dcb9
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Dungeons.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDungeonManager@6ab7ce48
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Advertises.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAdvertiseManager@55a609dd
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationTiers.xml)
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationLevels.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceExplorationManager@3fbcfe81
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:19:46 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:19:46 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:19:58 [Test worker] ERROR o.s.g.c.PlayerItemFilterComponent - invalid useAction type - playerId(2629), type(MATERIAL)
+2024-08-26 12:19:58 [Test worker] ERROR o.s.g.c.PlayerCategoryFilterComponent - add action fail - playerId(2629), type(ITEM), dataId(23)
+2024-08-26 12:20:04 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-26 12:20:04 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@398474a2
+2024-08-26 12:20:04 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items-PortraitIcon.xml)
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceItemManager@2e23c180
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:20:05 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:20:05 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@6e1b9411
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:20:05 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:20:05 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@21d1b321
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Collections.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceCollectionManager@73545b80
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\PartsSlots.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourcePartsSlotManager@58516c91
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Maps.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceMapManager@61e7bf2f
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StageGroups.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStageGroupManager@379ce046
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\DropTables.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDropTableManager@5918c260
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Avatars.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAvatarManager@5b275174
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StatGrowths.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStatGrowthManager@b25b095
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Dungeons.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDungeonManager@39ad12b6
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Advertises.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAdvertiseManager@61d34b4
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationTiers.xml)
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationLevels.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceExplorationManager@68577ba8
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:20:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:20:05 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:20:15 [Test worker] ERROR o.s.g.c.PlayerItemFilterComponent - invalid useAction type - playerId(2630), type(MATERIAL)
+2024-08-26 12:20:15 [Test worker] ERROR o.s.g.c.PlayerCategoryFilterComponent - add action fail - playerId(2630), type(ITEM), dataId(23)
+2024-08-26 12:20:48 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-26 12:20:48 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@398474a2
+2024-08-26 12:20:48 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items-PortraitIcon.xml)
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceItemManager@2e23c180
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:20:48 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:20:48 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@6e1b9411
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:20:48 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:20:48 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@21d1b321
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Collections.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceCollectionManager@73545b80
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\PartsSlots.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourcePartsSlotManager@58516c91
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Maps.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceMapManager@61e7bf2f
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StageGroups.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStageGroupManager@379ce046
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\DropTables.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDropTableManager@5918c260
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Avatars.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAvatarManager@5b275174
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StatGrowths.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStatGrowthManager@b25b095
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Dungeons.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDungeonManager@39ad12b6
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Advertises.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAdvertiseManager@61d34b4
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationTiers.xml)
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationLevels.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceExplorationManager@68577ba8
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:20:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:20:48 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:21:25 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-26 12:21:25 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@398474a2
+2024-08-26 12:21:25 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items-PortraitIcon.xml)
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceItemManager@2e23c180
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:21:25 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:21:25 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@6e1b9411
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:21:25 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:21:25 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@21d1b321
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Collections.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceCollectionManager@73545b80
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\PartsSlots.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourcePartsSlotManager@58516c91
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Maps.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceMapManager@61e7bf2f
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StageGroups.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStageGroupManager@379ce046
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\DropTables.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDropTableManager@5918c260
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Avatars.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAvatarManager@5b275174
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StatGrowths.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStatGrowthManager@b25b095
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Dungeons.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDungeonManager@39ad12b6
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Advertises.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAdvertiseManager@61d34b4
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationTiers.xml)
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationLevels.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceExplorationManager@68577ba8
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:21:25 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:21:25 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:21:41 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-26 12:21:41 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@398474a2
+2024-08-26 12:21:41 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items-PortraitIcon.xml)
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceItemManager@2e23c180
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:21:42 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:21:42 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@6e1b9411
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:21:42 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:21:42 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@21d1b321
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Collections.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceCollectionManager@73545b80
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\PartsSlots.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourcePartsSlotManager@58516c91
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Maps.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceMapManager@61e7bf2f
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StageGroups.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStageGroupManager@379ce046
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\DropTables.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDropTableManager@5918c260
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Avatars.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAvatarManager@5b275174
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StatGrowths.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStatGrowthManager@b25b095
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Dungeons.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDungeonManager@39ad12b6
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Advertises.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAdvertiseManager@61d34b4
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationTiers.xml)
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationLevels.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceExplorationManager@68577ba8
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:21:42 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:21:42 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:22:13 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-26 12:22:14 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1603dc2f
+2024-08-26 12:22:14 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items-PortraitIcon.xml)
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceItemManager@43a51d00
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:22:14 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:22:14 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@5e746d37
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:22:14 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:22:14 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@6e1b9411
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Collections.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceCollectionManager@6fa69af7
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\PartsSlots.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourcePartsSlotManager@21c7208d
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Maps.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceMapManager@96a75da
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StageGroups.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStageGroupManager@68fe48d7
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\DropTables.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDropTableManager@77e7246b
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Avatars.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAvatarManager@28e19366
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StatGrowths.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStatGrowthManager@61dde151
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Dungeons.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDungeonManager@50d951e7
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Advertises.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAdvertiseManager@6aba5d30
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationTiers.xml)
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationLevels.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceExplorationManager@3c46dcbe
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:22:14 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:22:14 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:24:03 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-26 12:24:03 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@398474a2
+2024-08-26 12:24:03 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items-PortraitIcon.xml)
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceItemManager@2e23c180
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:24:04 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:24:04 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@6e1b9411
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:24:04 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:24:04 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@21d1b321
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Collections.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceCollectionManager@73545b80
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\PartsSlots.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourcePartsSlotManager@58516c91
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Maps.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceMapManager@61e7bf2f
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StageGroups.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStageGroupManager@379ce046
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\DropTables.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDropTableManager@5918c260
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Avatars.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAvatarManager@5b275174
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StatGrowths.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStatGrowthManager@b25b095
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Dungeons.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDungeonManager@39ad12b6
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Advertises.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAdvertiseManager@61d34b4
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationTiers.xml)
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationLevels.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceExplorationManager@68577ba8
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:24:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:24:04 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:24:30 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-26 12:24:30 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@398474a2
+2024-08-26 12:24:30 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items-PortraitIcon.xml)
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceItemManager@2e23c180
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:24:30 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:24:30 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@6e1b9411
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:24:30 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:24:30 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@21d1b321
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Collections.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceCollectionManager@73545b80
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\PartsSlots.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourcePartsSlotManager@58516c91
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Maps.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceMapManager@61e7bf2f
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StageGroups.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStageGroupManager@379ce046
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\DropTables.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDropTableManager@5918c260
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Avatars.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAvatarManager@5b275174
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StatGrowths.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStatGrowthManager@b25b095
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Dungeons.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDungeonManager@39ad12b6
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Advertises.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAdvertiseManager@61d34b4
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationTiers.xml)
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationLevels.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceExplorationManager@68577ba8
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:24:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:24:30 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:24:47 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-26 12:24:47 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@398474a2
+2024-08-26 12:24:47 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-26 12:24:47 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items-PortraitIcon.xml)
+2024-08-26 12:24:47 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items.xml)
+2024-08-26 12:24:47 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceItemManager@2e23c180
+2024-08-26 12:24:47 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:24:47 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:24:47 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@6e1b9411
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:24:48 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:24:48 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@21d1b321
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Collections.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceCollectionManager@73545b80
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\PartsSlots.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourcePartsSlotManager@58516c91
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Maps.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceMapManager@61e7bf2f
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StageGroups.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStageGroupManager@379ce046
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\DropTables.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDropTableManager@5918c260
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Avatars.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAvatarManager@5b275174
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StatGrowths.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStatGrowthManager@b25b095
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Dungeons.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDungeonManager@39ad12b6
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Advertises.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAdvertiseManager@61d34b4
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationTiers.xml)
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationLevels.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceExplorationManager@68577ba8
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:24:48 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:24:48 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:25:40 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-26 12:25:40 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@398474a2
+2024-08-26 12:25:40 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-26 12:25:40 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items-PortraitIcon.xml)
+2024-08-26 12:25:40 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items.xml)
+2024-08-26 12:25:40 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceItemManager@2e23c180
+2024-08-26 12:25:40 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:25:40 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:25:41 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@6e1b9411
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:25:41 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:25:41 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@21d1b321
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Collections.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceCollectionManager@73545b80
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\PartsSlots.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourcePartsSlotManager@58516c91
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Maps.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceMapManager@61e7bf2f
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StageGroups.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStageGroupManager@379ce046
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\DropTables.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDropTableManager@5918c260
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Avatars.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAvatarManager@5b275174
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StatGrowths.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStatGrowthManager@b25b095
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Dungeons.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDungeonManager@39ad12b6
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Advertises.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAdvertiseManager@61d34b4
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationTiers.xml)
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationLevels.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceExplorationManager@68577ba8
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:25:41 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:25:41 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:26:04 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-26 12:26:04 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@398474a2
+2024-08-26 12:26:04 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-26 12:26:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items-PortraitIcon.xml)
+2024-08-26 12:26:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items.xml)
+2024-08-26 12:26:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceItemManager@2e23c180
+2024-08-26 12:26:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:26:04 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:26:04 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:26:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:26:04 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@6e1b9411
+2024-08-26 12:26:04 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:26:04 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:26:04 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:26:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@21d1b321
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Collections.xml)
+2024-08-26 12:26:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceCollectionManager@73545b80
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\PartsSlots.xml)
+2024-08-26 12:26:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourcePartsSlotManager@58516c91
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Maps.xml)
+2024-08-26 12:26:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceMapManager@61e7bf2f
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StageGroups.xml)
+2024-08-26 12:26:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStageGroupManager@379ce046
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\DropTables.xml)
+2024-08-26 12:26:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDropTableManager@5918c260
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Avatars.xml)
+2024-08-26 12:26:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAvatarManager@5b275174
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StatGrowths.xml)
+2024-08-26 12:26:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStatGrowthManager@b25b095
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Dungeons.xml)
+2024-08-26 12:26:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDungeonManager@39ad12b6
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Advertises.xml)
+2024-08-26 12:26:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAdvertiseManager@61d34b4
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationTiers.xml)
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationLevels.xml)
+2024-08-26 12:26:05 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceExplorationManager@68577ba8
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:26:05 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:26:05 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:26:05 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:26:05 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:27:15 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s324ms979µs700ns).
+2024-08-26 12:28:29 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-26 12:28:30 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@398474a2
+2024-08-26 12:28:30 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items-PortraitIcon.xml)
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceItemManager@2e23c180
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:28:30 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:28:30 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@6e1b9411
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:28:30 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:28:30 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@21d1b321
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Collections.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceCollectionManager@73545b80
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\PartsSlots.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourcePartsSlotManager@58516c91
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Maps.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceMapManager@61e7bf2f
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StageGroups.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStageGroupManager@379ce046
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\DropTables.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDropTableManager@5918c260
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Avatars.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAvatarManager@5b275174
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StatGrowths.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStatGrowthManager@b25b095
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Dungeons.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDungeonManager@39ad12b6
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Advertises.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAdvertiseManager@61d34b4
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationTiers.xml)
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationLevels.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceExplorationManager@68577ba8
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:28:30 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:28:30 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:29:28 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-26 12:29:28 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@398474a2
+2024-08-26 12:29:28 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-26 12:29:28 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items-PortraitIcon.xml)
+2024-08-26 12:29:28 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items.xml)
+2024-08-26 12:29:28 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceItemManager@2e23c180
+2024-08-26 12:29:28 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:29:28 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:29:29 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@6e1b9411
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 12:29:29 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 12:29:29 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@21d1b321
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Collections.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceCollectionManager@73545b80
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\PartsSlots.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourcePartsSlotManager@58516c91
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Maps.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceMapManager@61e7bf2f
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StageGroups.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStageGroupManager@379ce046
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\DropTables.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDropTableManager@5918c260
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Avatars.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAvatarManager@5b275174
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StatGrowths.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStatGrowthManager@b25b095
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Dungeons.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDungeonManager@39ad12b6
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Advertises.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAdvertiseManager@61d34b4
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationTiers.xml)
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationLevels.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceExplorationManager@68577ba8
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 12:29:29 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 12:29:29 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 13:41:07 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-26 13:41:07 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@398474a2
+2024-08-26 13:41:07 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items-PortraitIcon.xml)
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Items.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceItemManager@2e23c180
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 13:41:07 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 13:41:07 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@6e1b9411
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Pets.xml)
+2024-08-26 13:41:07 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Stones.xml)
+2024-08-26 13:41:07 [ForkJoinPool.commonPool-worker-1] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Growth-Parts.xml)
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GrowthUpgrades.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceGrowthManager@21d1b321
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Collections.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceCollectionManager@73545b80
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\PartsSlots.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourcePartsSlotManager@58516c91
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Maps.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceMapManager@61e7bf2f
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StageGroups.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStageGroupManager@379ce046
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\DropTables.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDropTableManager@5918c260
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Avatars.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAvatarManager@5b275174
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\StatGrowths.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceStatGrowthManager@b25b095
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Dungeons.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceDungeonManager@39ad12b6
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\Advertises.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceAdvertiseManager@61d34b4
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationTiers.xml)
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationLevels.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.supercat.growstone.ResourceContext - loaded - org.supercat.growstone.managers.ResourceExplorationManager@68577ba8
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\GameData.xml)
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\LevelConfig.xml)
+2024-08-26 13:41:07 [Test worker] INFO  org.supercat.growstone.XMLHelper - loading - file(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)
+2024-08-26 13:41:07 [Test worker] INFO  o.s.g.GameDatas.GameDataLoader - game data loading - path(C:\gs\growstone2\assets\resources\ExplorationConfig.xml)

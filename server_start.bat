@@ -1,0 +1,1 @@
+java -Duser.timezone=UTC -jar growstone-server.jar

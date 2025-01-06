@@ -1,0 +1,35 @@
+plugins {
+    id 'application'
+}
+
+dependencies {
+}
+
+clean {
+    delete "${rootDir}/growstone-server.jar"
+}
+
+jar {
+    from {
+        configurations.compileClasspath.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+
+    manifest {
+        attributes(
+                'Main-Class': 'org.supercat.growstone.Server'
+        )
+    }
+
+    archiveFileName = 'growstone-server.jar'
+    destinationDirectory = file("$rootDir")
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+
+application {
+    tasks.run.workingDir = "$rootDir"
+    mainClass.set('org.supercat.growstone.Server')
+    applicationDefaultJvmArgs = ['-Dlog4j.configurationFile=log4j2.properties']
+    applicationDefaultJvmArgs = ['-Duser.timezone=UTC']
+}

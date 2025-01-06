@@ -1,0 +1,42 @@
+syntax = "proto2";
+
+option java_multiple_files = true;
+    option java_package = "com.supercat.kingdomwinds.growstone.messages";
+
+message Packet {
+      extensions 10 to max;
+
+      enum Type {
+                Ping = 10;
+                Login = 11;
+                LoginResult = 12;
+      }
+
+      optional int64 id = 1;
+      optional Type type = 2;
+}
+
+message Ping {
+    extend Packet {
+        optional Ping packet = 10;
+    }
+
+    optional double time = 1;
+    optional int32 latency = 2;
+}
+
+message Login {
+    extend Packet {
+        optional Login packet = 11;
+    }
+        optional double time = 1;
+        optional int32 latency = 2;
+
+    message Result {
+        extend Packet {
+            optional Result packet = 12;
+        }
+
+        optional int32 status = 1;
+    }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="growstone" target="17" />
+      <module name="growstone.growstone-core" target="17" />
+      <module name="growstone.growstone-core.main" target="17" />
+      <module name="growstone.growstone-core.test" target="17" />
+      <module name="growstone.growstone-database" target="17" />
+      <module name="growstone.growstone-database.main" target="17" />
+      <module name="growstone.growstone-database.test" target="17" />
+      <module name="growstone.growstone-network" target="17" />
+      <module name="growstone.growstone-network.main" target="17" />
+      <module name="growstone.growstone-network.test" target="17" />
+      <module name="growstone.growstone-redis" target="17" />
+      <module name="growstone.growstone-redis.main" target="17" />
+      <module name="growstone.growstone-redis.test" target="17" />
+      <module name="growstone.growstone-resource" target="17" />
+      <module name="growstone.growstone-resource.main" target="17" />
+      <module name="growstone.growstone-resource.test" target="17" />
+      <module name="growstone.growstone-server" target="17" />
+      <module name="growstone.growstone-server.main" target="17" />
+      <module name="growstone.growstone-server.test" target="17" />
+      <module name="growstone.growthstone-chat" target="17" />
+      <module name="growstone.growthstone-chat.main" target="17" />
+      <module name="growstone.growthstone-chat.test" target="17" />
+      <module name="growstone.main" target="17" />
+      <module name="growstone.test" target="17" />
+      <module name="org.example.growstone.growstone-game-core" target="17" />
+      <module name="org.example.growstone.growstone-game-core.main" target="17" />
+      <module name="org.example.growstone.growstone-game-core.test" target="17" />
+      <module name="org.supercat.growstone.growstone.growthstone-chat" target="17" />
+      <module name="org.supercat.growstone.growstone.growthstone-chat.main" target="17" />
+      <module name="org.supercat.growstone.growstone.growthstone-chat.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

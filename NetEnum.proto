@@ -1,0 +1,766 @@
+syntax = "proto3";
+
+import "descriptor.proto";
+option java_multiple_files = true;
+option java_package = "com.supercat.growstone.network.messages";
+
+extend google.protobuf.EnumValueOptions {
+    string description = 50001;
+}
+
+
+enum PacketType {
+        Ping = 0;
+        LoginRequest = 1;
+        LoginResponse = 2;
+        ChangeEquipAvatarRequest = 3;
+        ChangeEquipAvatarResponse = 4;
+        GrowthLevelUpRequest = 5;
+        GrowthLevelUpResponse = 6;
+        GrowthPromoteRequest = 7;
+        GrowthPromoteResponse = 8;
+        GrowthLimitBreakRequest = 9;
+        GrowthLimitBreakResponse = 10;
+        PartsSlotLevelUpRequest = 11;
+        PartsSlotLevelUpResponse = 12;
+        GrowthEquipPartsRequest = 13;
+        GrowthEquipPartsResponse = 14;
+        LogoutRequest = 15;
+        LogoutResponse = 16;
+        LogoutNotify = 17;
+        MailRequest = 18;
+        MailResponse = 19;
+        MailReadRequest = 20;
+        MailReadResponse = 21;
+        MailNotify = 22;
+        CollectionLevelUpRequest = 23;
+        CollectionLevelUpResponse = 24;
+        CollectionRequest = 25;
+        CollectionResponse = 26;
+        SyncItemCountRequest = 27;
+        SyncItemCountResponse = 28;
+        PartsSlotRequest = 29;
+        PartsSlotResponse = 30;
+        StageClearSaveRequest = 31;
+        StageClearSaveResponse = 32;
+        ChangePortraitIconRequest = 33;
+        ChangePortraitIconResponse = 34;
+        ChangePlayerNameRequest = 35;
+        ChangePlayerNameResponse = 36;
+        StatsRequest = 37;
+        StatsResponse = 38;
+        CharacterStatGrowthRequest = 39;
+        CharacterStatGrowthResponse = 40;
+        CharacterStatGrowthLevelUpRequest = 41;
+        CharacterStatGrowthLevelUpResponse = 42;
+        EquipPresetRequest = 43;
+        EquipPresetResponse = 44;
+        EquipPresetEquipRequest = 45;
+        EquipPresetEquipResponse = 46;
+        EquipPresetUnEquipRequest = 47;
+        EquipPresetUnEquipResponse = 48;
+        EquipPresetNameChangeRequest = 51;
+        EquipPresetNameChangeResponse = 52;
+        EquipPresetIndexChangeRequest = 53;
+        EquipPresetIndexChangeResponse = 54;
+        StatsNotify = 55;
+        PlayerLevelUpNotify = 56;
+        DailyDungeonStartRequest = 57;
+        DailyDungeonStartResponse = 58;
+        DailyDungeonClearRequest = 59;
+        DailyDungeonClearResponse = 60;
+        DailyDungeonRequest = 61;
+        DailyDungeonResponse = 62;
+        DailyDungeonViewAdvertiseRequest = 63;
+        DailyDungeonViewAdvertiseResponse = 64;
+        RaidDungeonStartRequest = 65;
+        RaidDungeonStartResponse = 66;
+        RaidDungeonClearRequest = 67;
+        RaidDungeonClearResponse = 68;
+        RaidDungeonRequest = 69;
+        RaidDungeonResponse = 70;
+        RaidDungeonViewAdvertiseRequest = 71;
+        RaidDungeonViewAdvertiseResponse = 72;
+        TowerStartRequest = 73;
+        TowerStartResponse = 74;
+        TowerClearRequest = 75;
+        TowerClearResponse = 76;
+        TowerRequest = 77;
+        TowerResponse = 78;
+        CooperativeRaidDungeonRequest = 79;
+        CooperativeRaidDungeonResponse = 80;
+        CompetitiveRaidDungeonRequest = 81;
+        CompetitiveRaidDungeonResponse = 82;
+        CompetitiveRaidDungeonRankRequest = 83;
+        CompetitiveRaidDungeonRankResponse = 84;
+        FriendListRequest = 85;
+        FriendListResponse = 86;
+        AddFriendRequest = 87;
+        AddFriendResponse = 88;
+        DeleteFriendRequest = 89;
+        DeleteFriendResponse = 90;
+        GiveFriendGiftRequest = 91;
+        GiveFriendGiftResponse = 92;
+        SearchFriendRequest = 93;
+        SearchFriendResponse = 94;
+        AddFriendCancelRequest = 95;
+        AddFriendCancelResponse = 96;
+        RecommendFriendRequest = 98;
+        RecommendFriendResponse = 99;
+        AddFriendNotify = 100;
+        DeleteFriendNotify = 101;
+        ChangeFriendStateNotify = 102;
+        BlockPlayerRequest = 103;
+        BlockPlayerResponse = 104;
+        UnBlockPlayerRequest = 105;
+        UnBlockPlayerResponse = 106;
+        PlayerBlockListRequest = 107;
+        PlayerBlockListResponse = 108;
+        CheatRequest = 109;
+        CheatResponse = 110;
+        ViewAdvertiseRequest = 111;
+        ViewAdvertiseResponse = 112;
+        AvatarNotify = 113;
+        GrowthNotify = 114;
+        ItemNotify = 115;
+        StageNotify = 116;
+        StageBossGaugeOnRequest = 117;
+        StageBossGaugeOnResponse = 118;
+        // 119 사용 가능
+        ViewExplorationNotify = 120;
+        ExplorationStartRequest = 121;
+        ExplorationStartResponse = 122;
+        ExplorationEndRequest = 123;
+        ExplorationEndResponse = 124;
+        ExplorationChangeRequest = 125;
+        ExplorationChangeResponse = 126;
+        ViewExplorationCommercialRequest = 127;
+        ViewExplorationCommercialResponse = 128;
+        ExplorationCommercialRequest = 129;
+        ExplorationCommercialResponse = 130;
+        ExplorationAccelerationRequest = 131;
+        ExplorationAccelerationResponse = 132;
+        ExplorationEditAutoRequest = 133;
+        ExplorationEditAutoResponse = 134;
+        CurrencyNotify = 135;
+        AttackPowerRankRequest = 136;
+        AttackPowerRankResponse = 137;
+        GetPlayerDetailInfoRequest = 138;
+        GetPlayerDetailInfoResponse = 139;
+        PlayerSpawnGachaRequest = 140;
+        PlayerSpawnGachaResponse = 141;
+        PlayerPickUpGachaRewardRequest = 142;
+        PlayerPickUpGachaRewardResponse = 143;
+        PlayerViewGachaCommercialRequest = 144;
+        PlayerViewGachaCommercialResponse = 145;
+        PlayerConditionPackageInfoRequest = 146;
+        PlayerConditionPackageInfoResponse = 147;
+        PlayerConditionPackageNotify = 148;
+        DiggingRequest = 150;
+        DiggingResponse = 151;
+        DiggingUpgradeRequest = 152;
+        DiggingUpgradeResponse = 153;
+        DiggingUpgradeInfoRequest = 154;
+        DiggingUpgradeInfoResponse = 155;
+        DiggingCompleteRequest = 156;
+        DiggingCompleteResponse = 157;
+        ViewDiggingCommercialRequest = 158;
+        ViewDiggingCommercialResponse = 159;
+        UseAcceleratorRequest = 160;
+        UseAcceleratorResponse = 161;
+        DiggingInfoRequest  = 162;
+        DiggingInfoResponse = 163;
+        UseMultiAcceleratorRequest = 164;
+        UseMultiAcceleratorResponse = 165;
+        PlayerGachaInfoRequest = 166;
+        PlayerGachaInfoResponse = 167;
+        PlayerShopItemInfoRequest = 168;
+        PlayerShopItemInfoResponse = 169;
+        PlayerPurchaseShopItemRequest  = 172;
+        PlayerPurchaseShopItemResponse = 173;
+        PlayerShopPassInfoRequest = 174;
+        PlayerShopPassInfoResponse = 175;
+        PlayerShopPassRewardRequest = 176;
+        PlayerShopPassRewardResponse = 177;
+        AttackPowerRankNotify = 179;
+        DuelRequest = 180;
+        DuelResponse = 181;
+        FarmInfoRequest = 200;
+        FarmInfoResponse = 201;
+        FarmPlantSeedRequest = 202;
+        FarmPlantSeedResponse = 203;
+        FarmPlantBoostRequest = 204;
+        FarmPlantBoostResponse = 205;
+        FarmPlantHarvestRequest = 206;
+        FarmPlantHarvestResponse = 207;
+        FarmStealRequest = 208;
+        FarmStealResponse = 209;
+        FarmReturnStolenPlantsToThiefRequest = 210;
+        FarmReturnStolenPlantsToThiefResponse = 211;
+        FarmRemoveThiefByBattleRequest = 212;
+        FarmRemoveThiefByBattleResponse = 213;
+        FarmHistoryListRequest = 214;
+        FarmHistoryListResponse = 215;
+        FarmFriendListRequest = 216;
+        FarmFriendListResponse = 217;
+        FarmOtherListRequest = 218;
+        FarmOtherListResponse = 219;
+        FarmCommercialInfoRequest = 220;
+        FarmCommercialInfoResponse = 221;
+        FarmCommercialSeedViewRequest = 222;
+        FarmCommercialSeedViewResponse = 223;
+        FarmCookInfoRequest = 224;
+        FarmCookInfoResponse = 225;
+        FarmCookRequest = 226;
+        FarmCookResponse = 227;
+        FarmCookCommercialViewRequest = 228;
+        FarmCookCommercialViewResponse = 229;
+        PortraitNotify = 230;
+        FarmMyRestrictionsInfoRequest = 231;
+        FarmMyRestrictionsInfoResponse = 232;
+        FarmChangeNotify = 233;
+        WorldEventRequest = 234;
+        WorldEventResponse = 235;
+        WorldEventNotify = 236;
+        PlayerEventRequest = 237;
+        PlayerEventResponse = 238;
+        PlayerEventRewardRequest = 239;
+        PlayerEventRewardResponse = 240;
+        PlayerEventNotify = 241;
+        PlayerDailyContentRequest = 242;
+        PlayerDailyContentResponse = 243;
+        PlayerDailyContentRewardRequest = 244;
+        PlayerDailyContentRewardResponse = 245;
+        PlayerDailyContentNotify = 246;
+        PlayerAchievementRequest = 247;
+        PlayerAchievementResponse = 248;
+        PlayerAchievementNotify = 249;
+        PlayerAchievementRewardRequest = 250;
+        PlayerAchievementRewardResponse = 251;
+        PlayerQuestRequest = 252;
+        PlayerQuestResponse = 253;
+        PlayerQuestRewardRequest = 254;
+        PlayerQuestRewardResponse = 255;
+        PlayerQuestNotify = 256;
+        PlayerDuelHistorySaveRequest = 257;
+        PlayerDuelHistorySaveResponse = 258;
+        PlayerDuelHistoriesRequest = 259;
+        PlayerDuelHistoriesResponse = 260;
+
+        ClanJoinRequestListRequest = 261;
+        ClanJoinRequestListResponse = 262;
+        ClanJoinRequestReplyRequest = 263;
+        ClanJoinRequestReplyResponse = 264;
+        ClanJoinRequestReplyNotify = 265;
+        AddFriendResponseRequest = 266;
+        AddFriendResponseResponse = 267;
+        CreateClanRequest = 270;
+        CreateClanResponse = 271;
+        ClanInfoRequest = 272;
+        ClanInfoResponse = 273;
+        PlayerClanJoinRequestListRequest = 274;
+        PlayerClanJoinRequestListResponse = 275;
+        PlayerClanJoinRequest = 276;
+        PlayerClanJoinResponse = 277;
+        PlayerClanJoinNotify = 278;
+        ClanMemberListRequest = 279;
+        ClanMemberListResponse = 280;
+        GetClanRecommendListRequest = 281;
+        GetClanRecommendListResponse = 282;
+        ClanNoticeChangeRequest = 283;
+        ClanNoticeChangeResponse = 284;
+        ClanIntroductionChangeRequest = 285;
+        ClanIntroductionChangeResponse = 286;
+        ClanMemberRoleChangeRequest = 287;
+        ClanMemberRoleChangeResponse = 288;
+        ClanMemberRoleChangeNotify = 289;
+        ClanMemberExpulsionRequest = 290;
+        ClanMemberExpulsionResponse = 291;
+        ClanMemberLeaveNotify = 292;
+        ClanMemberExpulsionNotify = 293;
+        ClanMemberLeaveRequest = 294;
+        ClanMemberLeaveResponse = 295;
+        ClanNameChangeRequest = 296;
+        ClanNameChangeResponse = 297;
+        PlayerDonateClanRequest = 298;
+        PlayerDonateClanResponse = 299;
+        StoneStatueInfoRequest = 300;
+        StoneStatueInfoResponse = 301;
+        StoneStatueEnchantSlotLockRequest = 302;
+        StoneStatueEnchantSlotLockResponse = 303;
+        StoneStatueEnchantChangeSafeGradeRequest = 304;
+        StoneStatueEnchantChangeSafeGradeResponse = 305;
+        StoneStatueEnchantRequest = 306;
+        StoneStatueEnchantResponse = 307;
+        StoneStatueGemLevelUpRequest = 308;
+        StoneStatueGemLevelUpResponse = 309;
+        StoneStatueGemLimitLevelUpRequest = 310;
+        StoneStatueGemLimitLevelUpResponse = 311;
+        StoneStatueAvatarEquipRequest = 312;
+        StoneStatueAvatarEquipResponse = 313;
+
+        PlayerAdvertiseInfoRequest = 314;
+        PlayerAdvertiseInfoResponse = 315;
+        PlayerClanDissolutionRequest = 316;
+        PlayerClanDissolutionResponse = 317;
+
+        PlayerBlockFriendWithCodeRequest = 318;
+        PlayerBlockFriendWithCodeResponse = 319;
+
+        ChatNotify = 1000;
+        ChatHistoryNotify   = 1001;
+        ChatRequest = 1002;
+        ChatResponse = 1003;
+        WhisperRequest = 1004;
+        WhisperResponse = 1005;
+        ChatHistoriesRequest = 1006;
+        ChatHistoriesResponse = 1007;
+}
+
+message ZLogin {
+    enum Type {
+       GOOGLE = 0 [(description) = "구글 로그인"];
+        APPLE = 1 [(description) = "애플 로그인"];
+        GUEST = 2 [(description) = "게스트 로그인"];
+    }
+}
+
+message ZResource {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        PORTRAIT_ICON = 1 [(description) = "초상화 아이콘"];
+        AVATAR = 2 [(description) = "아바타"];
+        PET = 3 [(description) = "펫"];
+        STONE = 4 [(description) = "돌"];
+        PARTS = 5 [(description) = "파츠"];
+        EXP = 6 [(description) = "경험치"];
+        ARTIFACT = 7 [(description) = "유물"];
+        REMOVE_AD = 8 [(description) = "광고 제거권"];
+        AVATAR_STATUE = 10 [(description) = " 석상 외형"];
+        GOLD = 10000 [(description) = "골드"];
+        FREE_RUBY = 10001 [(description) = "무료 루비"];
+        PAY_RUBY = 10002 [(description) = "유료 루비"];
+        FREE_DIAMOND = 10003 [(description) = "무료 다이아몬드"];
+        PAY_DIAMOND = 10004 [(description) = "유료 다이아몬드"];
+        MATERIAL = 10005 [(description) = "재료"];
+    }
+}
+
+message ZTier {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        COMMON = 1 [(description) = "일반"];
+        UNCOMMON = 2 [(description) = "고급"];
+        RARE = 3 [(description) = "희귀"];
+        EPIC = 4 [(description) = "보물"];
+        LEGENDARY = 5 [(description) = "전설"];
+        MYTHICAL = 6 [(description) = "신화"];
+        IMMORTAL = 7 [(description) = "불멸"];
+    }
+}
+
+message ZPayment {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        CURRENCY = 1 [(description) = "재화"];
+        ITEM = 2 [(description) = "아이템"];
+        STORE_RECEIPT = 3 [(description) = "상점 영수증"];
+        AD = 4 [(description) = "광고"];
+    }
+}
+
+message ZCategory {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        CURRENCY = 1 [(description) = "재화"];
+        GROWTH = 2 [(description) = "성장"];
+        AVATAR = 3 [(description) = "아바타"];
+        MATERIAL = 4 [(description) = "재료"];
+        ITEM = 5 [(description) = "아이템"];
+        PORTRAIT_ICON = 6 [(description) = "초상화"];
+        AVATAR_STONE_STATUE = 7 [(description) = "석상 외형"];
+    }
+}
+
+message ZAvatar {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        AVATAR = 1 [(description) = "아바타"];
+        AVATAR_ICON = 2 [(description) = "아바타 아이콘"];
+    }
+}
+
+message ZGrowth {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        PARTS = 1 [(description) = "파츠"];
+        PET = 2 [(description) = "펫"];
+        STONE = 3 [(description) = "돌"];
+    }
+}
+
+message ZGrowthParts {
+    enum Type {
+         NONE = 0 [(description) = "알 수 없음"];
+         HAT = 1 [(description) = "모자"];
+    }
+}
+
+message ZGrowthStatTarget {
+    enum Type {
+         NONE = 0 [(description) = "알 수 없음"];
+         LEVEL = 1 [(description) = "레벨"];
+         PROMOTE = 2 [(description) = "승급"];
+         LIMIT_BREAK = 3 [(description) = "돌파"];
+    }
+}
+
+message ZStat {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        BASE_ATTACK = 1 [(description) = "기본 공격력"];
+        BASE_DEFENSE = 2 [(description) = "기본 방어력"];
+        BASE_HP = 3 [(description) = "기본 생명력"];
+        BASE_ATTACK_SPEED = 4 [(description) = "공격 속도"];
+        BASE_MOVE_SPEED = 5 [(description) = "이동 속도"];
+        ATTACK = 6 [(description) = "일반 공격력"];
+        DEFENSE = 7 [(description) = "일반 방어력"];
+        HP = 8 [(description) = "일반 생명력"];
+        ATTACK_PERCENT = 1001 [(description) = "공격력(%)"];
+        DEFENSE_PERCENT = 1002 [(description) = "방어력(%)"];
+        HP_PERCENT = 1003 [(description) = "생명력(%)"];
+        ATTACK_SPEED_PERCENT = 1004 [(description) = "공격 속도(%)"];
+        MOVE_SPEED_PERCENT = 1005 [(description) = "이동 속도(%)"];
+        CRITICAL_PERCENT = 1006 [(description) = "치명 확률(%)"];
+        CRITICAL_RESIST_PERCENT = 1007 [(description) = "치명 저항(%)"];
+        CRITICAL_POWER_PERCENT = 1008 [(description) = "치명 피해(%)"];
+        CRITICAL_POWER_RESIST_PERCENT = 1009 [(description) = "치명 피해 저항(%)"];
+        ADD_DAMAGE_PERCENT = 1010 [(description) = "대미지(%)"];
+        ADD_STONE_SKILL_DAMAGE_PERCENT = 1011 [(description) = "스킬 피해량 증가(%)"];
+        ADD_PET_SKILL_DAMAGE_PERCENT = 1012 [(description) = "펫 스킬 피해량 증가(%)"];
+        ADD_NORMAL_MONSTER_DAMAGE_PERCENT = 1013 [(description) = "일반 몬스터 추가 피해(%)"];
+        ADD_BOSS_MONSTER_DAMAGE_PERCENT = 1014 [(description) = "보스 몬스터 추가 피해(%)"];
+        ADD_STAGE_GOLD_PERCENT = 1015 [(description) = "스테이지 골드 획득 증가(%)"];
+        ADD_STAGE_EXP_PERCENT = 1016 [(description) = "스테이지 경험치 획득 증가(%)"];
+        FINAL_ATTACK = 2001 [(description) = "최종 공격력"];
+        FINAL_DEFENSE = 2002 [(description) = "최종 방어력"];
+        FINAL_HP = 2003 [(description) = "최종 생명력"];
+        FINAL_ATTACK_SPEED = 2004 [(description) = "최종 공격 속도"];
+        FINAL_MOVE_SPEED = 2005 [(description) = "최종 이동 속도"];
+
+        BUFFED_ATTACK_PERCENT = 3001 [(description) = "버프 공격력"];
+        BUFFED_DEFENSE_PERCENT = 3002 [(description) = "버프 방어력"];
+        BUFFED_HP_PERCENT = 3003 [(description) = "버프 생명력"];
+        BUFFED_ATTACK_SPEED_PERCENT = 3004 [(description) = "버프 공격 속도"];
+        BUFFED_MOVE_SPEED_PERCENT = 3005 [(description) = "버프 이동 속도"];
+        BUFFED_CRITICAL_PERCENT = 3006 [(description) = "버프 치명 확률(%)"];
+        BUFFED_CRITICAL_RESIST_PERCENT = 3007 [(description) = "버프 치명 저항(%)"];
+        BUFFED_CRITICAL_POWER_PERCENT = 3008 [(description) = "버프 치명 피해(%)"];
+        BUFFED_CRITICAL_POWER_RESIST_PERCENT = 3009 [(description) = "버프 치명 피해 저항(%)"];
+        BUFFED_DAMAGE_PERCENT = 3010 [(description) = "버프 대미지 증가(%)"];
+        BUFFED_ADD_STONE_SKILL_DAMAGE_PERCENT = 3011 [(description) = "버프 스킬 피해량 증가(%)"];
+        BUFFED_ADD_PET_SKILL_DAMAGE_PERCENT = 3012 [(description) = "버프 펫 스킬 피해량 증가(%)"];
+        BUFFED_ADD_NORMAL_MONSTER_DAMAGE_PERCENT = 3013 [(description) = "버프 일반 몬스터 추가 피해(%)"];
+        BUFFED_ADD_BOSS_MONSTER_DAMAGE_PERCENT = 3014 [(description) = "버프 보스 몬스터 추가 피해(%)"];
+        BUFFED_ADD_STAGE_GOLD_PERCENT = 3015 [(description) = "버프 스테이지 골드 획득 증가(%)"];
+        BUFFED_ADD_STAGE_EXP_PERCENT = 3016 [(description) = "버프 스테이지 경험치 획득 증가(%)"];
+
+        SKILL_DAMAGE_PERCENT = 100001 [(description) = "스킬 피해량(%)"];
+        SKILL_HEAL_PERCENT = 100002 [(description) = "스킬 회복량(%)"];
+        DURATION = 100003 [(description) = "지속 시간"];
+        INTERVAL = 100004 [(description) = "발동 주기"];
+        SHIELD_HP_PERCENT = 100005 [(description) = "쉴드량(%)"];
+        DASH_DISTANCE = 100006 [(description) = "스킬 이동 거리"];
+    }
+}
+
+message ZInterval {
+    enum Type {
+         NONE = 0 [(description) = "알 수 없음"];
+         PERCENT = 1 [(description) = "퍼센트"];
+         ADD = 2 [(description) = "고정 수치"];
+    }
+}
+
+message ZLogout {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        DISCONNECT = 1 [(description) = "접속 종료"];
+        SESSION_TIMEOUT = 2 [(description) = "세션 만료"];
+        DUPLICATE_CONNECT = 3 [(description) = "중복 접속"];
+        KICK = 4 [(description) = "킥"];
+    }
+}
+
+message ZPartsSlot {
+    enum Type {
+      NONE = 0 [(description) = "알 수 없음"];
+      HAT = 1 [(description) = "투구"];
+      SHIRT = 2 [(description) = "상의"];
+      PANTS = 3 [(description) = "하의"];
+      GLOVES = 4 [(description) = "장갑"];
+      SHOES = 5 [(description) = "신발"];
+      CAPE = 6 [(description) = "망토"];
+      RING = 7 [(description) = "반지"];
+      NECKLACE = 8 [(description) = "목걸이"];
+    }
+}
+
+message ZPreset {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        PARTS = 1 [(description) = "장비"];
+        PET = 2 [(description) = "펫"];
+        STONE = 3 [(description) = "스톤"];
+        ARTIFACT = 4 [(description) = "유물"];
+        ENCHANT = 5 [(description) = "각인"];
+    }
+}
+
+message ZMail {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        RAID_COOPERATIVE_REWARD = 1 [(description) = "협동 경쟁전 레이드 서버 포인트 보상"];
+        RAID_COMPETITIVE_REWARD = 2 [(description) = "경쟁전 레이드 랭킹 보상"];
+        DAILY_GIFT_FROM_FRIEND = 3 [(description) = "친구 선물하기"];
+        FARM_THEFT_REWARD = 4 [(description) = "농장 훔치기 보상"];
+        SHOP_ITEM = 5 [(description) = "상점 아이템 구매"];
+        SHOP_GACHA_ITEM = 6 [(description) = "상점 뽑기"];
+        DESTROY_CLAN = 7 [(description) = "클랜 해체"];
+        CHANGE_CLAN_LEADER = 8 [(description) = "클랜장 변경"];
+        DISSOLUTION_CLAN = 9 [(description) = "클랜 해체"];
+    }
+}
+
+message ZFriend {
+    enum State {
+        NONE = 0 [(description) = "알 수 없음"];
+        ACCEPTED = 1 [(description) = "친구 상태"];
+        BLOCKED = 2 [(description) = "차단"];
+        PENDING_REQUEST = 3 [(description) = "친구 추가 신청중"];
+        REQUEST_RECEIVED = 4 [(description) = "친구 요청 받음"];
+    }
+}
+
+message ZAdvertise {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+
+        ARTIFACT = 1 [(description) = "친구 상태"];
+    }
+}
+
+message ZFarmPlantStatus {
+  enum Type {
+    NONE = 0 [(description) = "알 수 없음"];
+    EMPTY = 1 [(description) = "빈땅"];
+    HARVEST = 2 [(description) = "수확"];
+    UNDER_THEFT = 3 [(description) = "훔치기 당하는 중"];
+  }
+}
+
+message ZFarmHistory {
+  enum Type {
+    NONE = 0 [(description) = "알 수 없음"];
+    SEED = 1 [(description) = "씨앗 심기"];
+    HARVEST = 2 [(description) = "수확"];
+    FARM_LEVEL_UP = 3 [(description) = "농장 성장"];
+    PLANT_THEFT = 4 [(description) = "훔치기 당함"];
+    SUCCESS_THEFT = 5 [(description) = "훔치기 성공"];
+    FAILED_THEFT = 6 [(description) = "훔치기 실패"];
+  }
+}
+
+//DB에 저장되는 값
+message ZContentAdvertise {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        EXPLORATION = 1 [(description) = "탐험"];
+        FARM_COOK = 2 [(description) = "요리"];
+        DIGGING = 3 [(description) = "발굴"];
+        ACCELERATOR = 4 [(description) = "가속권"];
+        GACHA_PARTS = 5 [(description) = "장비 뽑기"];
+        GACHA_PET = 6 [(description) = "펫 뽑기"];
+        GACHA_STONE = 7 [(description) = "돌 뽑기"];
+        FARM_SEED = 8 [(description) = "농장 씨앗"];
+        FARM_BOOST = 9 [(description) = "농장 부스트"];
+    }
+}
+
+message ZDiggingUpgrade {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        TIME = 1 [(description) = "감소 시간"];
+        ZONE = 2 [(description) = "발굴지"];
+        SPOON = 3 [(description) = "스푼"];
+        TIER = 4 [(description) = "등급 확률"];
+    }
+}
+
+message ZBuyReset {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        DAILY = 1 [(description) = "일일"];
+        WEEKLY = 2 [(description) = "주간"];
+        MONTHLY = 3 [(description) = "월간"];
+    }
+}
+
+message ZShop {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        NORMAL = 1 [(description) = "일반 상품 및 패키지 상품"];
+        CONTINUE = 2 [(description) = "순차 구매 상품"];
+        CONDITION = 3 [(description) = "조건 패키지 상품"];
+        GACHA = 4 [(description) = "가챠 상품"];
+        PICKUP_GACHA = 5 [(description) = "픽업 가챠 상품"];
+        REMOVE_AD = 6 [(description) = "광고 제거 상품"];
+        SHOPPASS = 7 [(description) = "샵 패스 상품"];
+    }
+}
+
+message ZGachaGrowth {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        PARTS = 1 [(description) = "장비"];
+        PET = 2 [(description) = "펫"];
+        STONE = 3 [(description) = "돌"];
+    }
+}
+
+message ZCondition {
+    enum Type {
+         NONE = 0 [(description) = "알 수 없음"];
+         CLEAR_STAGE = 1 [(description) = "스테이지 클리어"];
+         GET_GROWTH = 2 [(description) = "성장 획득"];
+         GROWTH_PROMOTE = 3 [(description) = "성장 승급"];
+         GROWTH_LIMIT_BREAK = 4 [(description) = "성장 돌파"];
+         LEVEL_UP = 5 [(description) = "레벨업"];
+         CLEAR_DUNGEON = 6 [(description) = "던전 클리어"];
+         USE_ITEM = 7 [(description) = "아이템 사용"];
+         GET_ITEM = 8 [(description) = "아이템 획득"];
+         PLAY_GACHA = 9 [(description) = "가챠 플레이"];
+         ATTENDANCE = 10 [(description) = "출석"];
+         PLAY_ARENA = 11 [(description) = "아레나 플레이"];
+         COMPLETE_ACHIEVEMENT = 12 [(description) = "업적 완료"];
+         STATGROWTH_BASE_ATTACK = 13 [(description) = "스탯 성장 - 기본 공격력"];
+         STATGROWTH_BASE_DEFENSE = 14 [(description) = "스탯 성장 - 기본 방어력"];
+         STATGROWTH_BASE_HP = 15 [(description) = "스탯 성장 - 기본 체력"];
+         PARTS_SLOT = 16 [(description) = "파츠슬롯"];
+    }
+}
+
+message ZShopPassReward {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        FREE = 1 [(description) = "무료"];
+        PAID = 2 [(description) = "유료"];
+        ALL = 3 [(description) = "전체"];
+    }
+}
+
+message ZEvent {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        ATTENDANCE = 1 [(description) = "출석"];
+        CUMULATIVE_CONSUMPTION_EVENT = 2 [(description) = "누적 소비 이벤트"];
+        FIRST_PURCHASE_ATTENDANCE = 3 [(description) = "첫 구매 출석"];
+    }
+}
+
+message ZEventProgress {
+    enum State {
+        NONE = 0 [(description) = "알 수 없음"];
+        NOT_STARTED = 1 [(description) = "시작 전"];
+        PROGRESS = 2 [(description) = "진행중"];
+        COMPLETE = 3 [(description) = "완료"];
+        REWARDED = 4 [(description) = "보상 받음"];
+    }
+}
+
+message ZDailyContent {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        STONE_PRESS = 1 [(description) = "돌 깎기"];
+        ATTENDANCE = 2 [(description) = "7일 출석"];
+    }
+}
+
+message ZReward {
+    enum State {
+        NONE = 0 [(description) = "알 수 없음"];
+        CAN_REWARD = 1 [(description) = "보상 받을 수 있는 상태"];
+        GOT_REWARD = 2 [(description) = "보상 받은 상태"];
+    }
+}
+
+message ZClear {
+    enum State {
+        NONE = 0 [(description) = "알 수 없음"];
+        DOING = 1 [(description) = "진행중"];
+        COMPLETE = 2 [(description) = "완료"];
+        REWARDED = 3 [(description) = "보상 받음"];
+    }
+}
+
+message ZClan {
+    enum State {
+       NONE = 0 [(description) = "알 수 없음"];
+       ACTIVE = 1 [(description) = "활성"];
+       DISSOLUTION = 2 [(description) = "해체"];
+       TO_BE_DISSOLUTION = 3 [(description) = "해체 예정"];
+    }
+}
+
+message ZClanJoin {
+    enum Type {
+       NONE = 0 [(description) = "알 수 없음"];
+       AUTOMATIC = 1 [(description) = "자동 가입"];
+       APPROVAL_REQUIRED = 2 [(description) = "허락이 필요한 가입"];
+       NOT_ALLOWED = 3 [(description) = "가입 불가"];
+    }
+}
+
+message ZPlayerClanJoin {
+    enum State {
+       NONE = 0 [(description) = "알 수 없음"];
+       REQUEST = 1 [(description) = "가입 요청"];
+       APPROVAL = 2 [(description) = "가입 승인"];
+       REJECT = 3 [(description) = "가입 거절"];
+    }
+}
+
+message ZClanMember {
+    enum Role {
+         NONE = 0 [(description) = "알 수 없음"];
+         LEADER = 1 [(description) = "클랜장"];
+         DEPUTY_LEADER = 2 [(description) = "부클랜장"];
+         MEMBER = 3  [(description) = "일반 멤버"];
+    }
+}
+
+message ZChat {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        WORLD = 1 [(description) = "월드"];
+        CLAN = 2 [(description) = "클랜"];
+        WHISPER = 3 [(description) = "귓속말"];
+    }
+}
+
+message ZViolation {
+    enum Type {
+        NONE = 0 [(description) = "알 수 없음"];
+        HACKING_EXPLOITATION = 1 [(description) = "핵, 버그, 시스템 악용 및 유포"];
+        SPAMMING = 2 [(description) = "같은 말 반복 등의 도배 행위"];
+        INAPPROPRIATE_LANGUAGE = 3 [(description) = "욕설, 비속어, 혐오 등 부적절한 메시지"];
+        THREATS = 4 [(description) = "타인을 위협, 협박하는 언행"];
+        IMPERSONATION = 5 [(description) = "GM, 개발자 등 게임 관계자 사칭"];
+        COMMERCIAL_ADVERTISEMENT = 6 [(description) = "영리, 상업적 광고"];
+        PRIVACY_INVASION = 7 [(description) = "개인정보 침해"];
+        REAL_MONEY_TRADING = 8 [(description) = "현금,타 게임 간 거래 및 의미를 담은 언행"];
+        INSULTING_OTHERS = 9 [(description) = "타인을 모욕 및 비방하는 언행"];
+        INAPPROPRIATE_NAME = 10 [(description) = "부적절한 캐릭터 이름"];
+        SPREADING_FALSE_INFORMATION = 11 [(description) = "거짓 정보 유포 및 선동하거나 또는 의도가 담긴 언행"];
+    }
+}

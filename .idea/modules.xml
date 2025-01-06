@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-core/growstone.growstone-core.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-core/growstone.growstone-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-core/growstone.growstone-core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-core/growstone.growstone-core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-core/growstone.growstone-core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-core/growstone.growstone-core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-database/growstone.growstone-database.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-database/growstone.growstone-database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-database/growstone.growstone-database.main.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-database/growstone.growstone-database.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-database/growstone.growstone-database.test.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-database/growstone.growstone-database.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-game-core/growstone.growstone-game-core.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-game-core/growstone.growstone-game-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-game-core/growstone.growstone-game-core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-game-core/growstone.growstone-game-core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-game-core/growstone.growstone-game-core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-game-core/growstone.growstone-game-core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-network/growstone.growstone-network.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-network/growstone.growstone-network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-network/growstone.growstone-network.main.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-network/growstone.growstone-network.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-network/growstone.growstone-network.test.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-network/growstone.growstone-network.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-redis/growstone.growstone-redis.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-redis/growstone.growstone-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-redis/growstone.growstone-redis.main.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-redis/growstone.growstone-redis.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-redis/growstone.growstone-redis.test.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-redis/growstone.growstone-redis.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-resource/growstone.growstone-resource.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-resource/growstone.growstone-resource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-resource/growstone.growstone-resource.main.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-resource/growstone.growstone-resource.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-resource/growstone.growstone-resource.test.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-resource/growstone.growstone-resource.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-server/growstone.growstone-server.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-server/growstone.growstone-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-server/growstone.growstone-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-server/growstone.growstone-server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-server/growstone.growstone-server.test.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-server/growstone.growstone-server.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growthstone-chat/growstone.growthstone-chat.iml" filepath="$PROJECT_DIR$/.idea/modules/growthstone-chat/growstone.growthstone-chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growthstone-chat/growstone.growthstone-chat.main.iml" filepath="$PROJECT_DIR$/.idea/modules/growthstone-chat/growstone.growthstone-chat.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growthstone-chat/growstone.growthstone-chat.test.iml" filepath="$PROJECT_DIR$/.idea/modules/growthstone-chat/growstone.growthstone-chat.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone.main.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone.test.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-game-core/org.example.growstone.growstone-game-core.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-game-core/org.example.growstone.growstone-game-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-game-core/org.example.growstone.growstone-game-core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-game-core/org.example.growstone.growstone-game-core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growstone-game-core/org.example.growstone.growstone-game-core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/growstone-game-core/org.example.growstone.growstone-game-core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growthstone-chat/org.supercat.growstone.growstone.growthstone-chat.iml" filepath="$PROJECT_DIR$/.idea/modules/growthstone-chat/org.supercat.growstone.growstone.growthstone-chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growthstone-chat/org.supercat.growstone.growstone.growthstone-chat.main.iml" filepath="$PROJECT_DIR$/.idea/modules/growthstone-chat/org.supercat.growstone.growstone.growthstone-chat.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/growthstone-chat/org.supercat.growstone.growstone.growthstone-chat.test.iml" filepath="$PROJECT_DIR$/.idea/modules/growthstone-chat/org.supercat.growstone.growstone.growthstone-chat.test.iml" />
+    </modules>
+  </component>
+</project>
